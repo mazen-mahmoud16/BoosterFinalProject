@@ -122,7 +122,7 @@
         android:gravity="center"
         android:text="Personal-Branding"
         android:textColor="#000000"
-        android:textSize="18dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent"
@@ -273,6 +273,7 @@
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="@id/selfIcon"
         app:layout_constraintTop_toTopOf="@id/selfIcon" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
