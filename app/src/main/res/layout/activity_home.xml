@@ -277,10 +277,11 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:background="#d2fcfa"
         android:foregroundGravity="bottom"
         app:itemIconSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:itemIconTint="@drawable/navigationselector"
         app:menu="@menu/menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
