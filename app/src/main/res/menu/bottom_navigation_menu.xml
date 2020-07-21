@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/house_outline"
+        android:id="@+id/bottomNavigationAlarmMenuId"
+        android:icon="@drawable/house_outline"/>
+
+    <item android:title="@string/search"
+        android:id="@+id/bottomNavigationClockMenuId"
+        android:icon="@drawable/search"/>
+
+    <item android:title="@string/graph"
+        android:id="@+id/bottomNavigationTimerMenuId"
+        android:icon="@drawable/graph"/>
+
+    <item android:title="@string/user"
+        android:id="@+id/bottomNavigationStopWatchMenuId"
+        android:icon="@drawable/user"/>
+
+</menu>
