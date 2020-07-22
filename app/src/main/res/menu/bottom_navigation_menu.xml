@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/house_outline"
+    <item android:title="@string/app_name"
         android:id="@+id/bottomNavigationAlarmMenuId"
-        android:icon="@drawable/house_outline"/>
+        android:icon="@drawable/house_outline"
+        android:iconTint="#89ABB5"
+        android:enabled="true"/>
 
-    <item android:title="@string/search"
+    <item android:title="@string/app_name"
         android:id="@+id/bottomNavigationClockMenuId"
-        android:icon="@drawable/search"/>
+        android:icon="@drawable/search"
+        android:enabled="true"/>
 
-    <item android:title="@string/graph"
+    <item android:title="@string/app_name"
         android:id="@+id/bottomNavigationTimerMenuId"
-        android:icon="@drawable/graph"/>
+        android:icon="@drawable/graph"
+        android:enabled="true"/>
 
-    <item android:title="@string/user"
+    <item android:title="@string/app_name"
         android:id="@+id/bottomNavigationStopWatchMenuId"
-        android:icon="@drawable/user"/>
+        android:icon="@drawable/user"
+        android:enabled="true"/>
 
 </menu>
