@@ -47,7 +47,8 @@ dependencies {
     //Network dependencies
     implementation 'com.squareup.retrofit2:retrofit:2.8.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
-
+    //Card view depedency
+    implementation "androidx.cardview:cardview:1.0.0"
     //Image loading library
     implementation 'com.squareup.picasso:picasso:2.71828'
 
