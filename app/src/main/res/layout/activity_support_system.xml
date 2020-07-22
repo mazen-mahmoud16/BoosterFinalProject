@@ -7,7 +7,6 @@
     android:background="@drawable/gradient_bg"
     tools:context=".support_system">
 
-
     <Button
         android:id="@+id/submit"
         android:layout_width="250dp"
@@ -98,7 +97,7 @@
         android:layout_width="216dp"
         android:layout_height="119dp"
         android:layout_marginStart="16dp"
-        android:text="Course related questions goes in here?"
+        android:text="Course related question goes in here?"
         android:textColor="#1f314a"
         android:textSize="30sp"
         android:textStyle="bold"
