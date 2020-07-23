@@ -1,8 +1,10 @@
 package com.example.boosterfinalproject
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View.OnTouchListener
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_awareness_room.*
+
 
 class AwarenessRoom : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,6 +12,12 @@ class AwarenessRoom : AppCompatActivity() {
         setContentView(R.layout.activity_awareness_room)
         val dataaAdapter=DataAdapter(getLessonList())
         main.adapter=dataaAdapter
+        core.setOnClickListener(){
+            core.setBackground(getDrawable(R.drawable.backrounded))
+        }
+
+
+
     }
     private fun getLessonList() : ArrayList<Data> {
         val LessonList: ArrayList<Data> = ArrayList()
@@ -25,3 +33,5 @@ class AwarenessRoom : AppCompatActivity() {
 
     }
 }
+
+
