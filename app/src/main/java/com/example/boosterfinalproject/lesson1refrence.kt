@@ -11,7 +11,7 @@ class lesson1refrence : AppCompatActivity() {
         setContentView(R.layout.activity_lesson1refrence)
 
         videoView.settings.javaScriptEnabled = true
-        videoView.loadUrl("https://www.youtube.com/embed/YWSjxEZqmZM")
+        videoView.loadUrl("https://www.youtube.com/embed/n7WRDmwqLec")
 
     }
 }
