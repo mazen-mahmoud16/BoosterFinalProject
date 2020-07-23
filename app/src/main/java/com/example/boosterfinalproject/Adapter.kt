@@ -26,7 +26,7 @@ class Adapter(val Personlist:ArrayList<Person>) : RecyclerView.Adapter<Adapter.v
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
         val person= Personlist.get(position)
         holder.personName.text=person.name
-        holder.Score.text=person.Score.toString()+" "+"Points"
+        holder.Score.text="${person.Score} Points".toString()
         holder.Rank.text=person.Rank.toString()
         holder.image.setImageResource(person.Image)
         if(person.Rank==1){
@@ -43,7 +43,7 @@ class Adapter(val Personlist:ArrayList<Person>) : RecyclerView.Adapter<Adapter.v
 
     inner class viewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         val personName: TextView =itemView.name
-        val Score: TextView =itemView.textView12
+        val Score: TextView =itemView.points
         val Rank: TextView =itemView.textView14
         val itemm=itemView.item
         val image=itemView.imageView9

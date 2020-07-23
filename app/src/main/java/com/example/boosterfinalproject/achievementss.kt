@@ -24,12 +24,12 @@ class achievementss : AppCompatActivity() {
 
     fun getPersons(): ArrayList<Person> {
         val persons: ArrayList<Person> = ArrayList()
-        persons.add(Person("Nony", 293.222, 1, R.drawable.ic_launcher_background))
-        persons.add(Person("Yaya", 291.222, 2, R.drawable.ic_launcher_background))
-        persons.add(Person("Mezu", 290.222, 3, R.drawable.ic_launcher_background))
-        persons.add(Person("Marabella", 289.222, 4, R.drawable.ic_launcher_background))
-        persons.add(Person("Anoja", 288.222, 5, R.drawable.ic_launcher_background))
-        persons.add(Person("Sosy", 260.222, 6, R.drawable.ic_launcher_background))
+        persons.add(Person("Nony", "600,765", 1, R.drawable.girl))
+        persons.add(Person("Yaya", "590,189", 2, R.drawable.jake_img))
+        persons.add(Person("Mezu", "460,765", 3, R.drawable.charlie_img))
+        persons.add(Person("Marabella", "300,432", 4, R.drawable.emma_img))
+        persons.add(Person("Anoja", "100,754", 5, R.drawable.sofia_img))
+        persons.add(Person("Sosy", "70,655", 6, R.drawable.girl2))
         return persons
     }
 }
