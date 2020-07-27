@@ -27,20 +27,14 @@
         <activity android:name=".gift">
 
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Congrats"></activity>
+        <activity android:name=".Friend_recyclerview" />
+        <activity android:name=".Friend" />
 
-        </activity>
-        <activity android:name=".achievementss">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".AwarenessRoom">
-
-        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
