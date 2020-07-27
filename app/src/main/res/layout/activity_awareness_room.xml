@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d2fcfa"
+    tools:context=".AwarenessRoom">
+
+    <Button
+        android:id="@+id/core"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:textColor="#aa1f314a"
+        android:background="@drawable/backk"
+        android:text="Core Value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoo" />
+
+    <TextView
+        android:id="@+id/Awareness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Awareness Room"
+        android:textColor="#1f314a"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="38dp"
+        android:layout_height="7dp"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textback"
+        app:layout_constraintStart_toStartOf="@id/Awareness"
+        app:layout_constraintTop_toBottomOf="@id/Awareness" />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="38dp"
+        android:layout_height="7dp"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textbackkk"
+        app:layout_constraintEnd_toStartOf="@id/three"
+        app:layout_constraintStart_toEndOf="@id/one"
+        app:layout_constraintTop_toBottomOf="@id/Awareness" />
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="38dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textbackkk"
+        app:layout_constraintEnd_toStartOf="@id/four"
+        app:layout_constraintStart_toEndOf="@id/two"
+        app:layout_constraintTop_toBottomOf="@id/Awareness" />
+
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="38dp"
+        android:layout_height="7dp"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/textbackkk"
+        app:layout_constraintEnd_toStartOf="@id/five"
+        app:layout_constraintStart_toEndOf="@id/three"
+        app:layout_constraintTop_toBottomOf="@id/Awareness" />
+
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="38dp"
+        android:layout_height="7dp"
+
+        android:background="@drawable/textbackkk"
+        app:layout_constraintBottom_toBottomOf="@id/four"
+        app:layout_constraintEnd_toEndOf="@id/Awareness"
+        app:layout_constraintTop_toTopOf="@id/four" />
+
+    <Button
+        android:id="@+id/support"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/backrounded"
+        android:text="Support System"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/book" />
+
+    <Button
+        android:id="@+id/weak"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+
+android:textColor="#aa1f314a"
+android:background="@drawable/backk"
+        android:text="Strength-Weakness"
+        app:layout_constraintStart_toStartOf="@id/support"
+        app:layout_constraintTop_toTopOf="@id/goals" />
+
+    <Button
+        android:id="@+id/goals"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+
+        android:alpha="1"
+        android:textColor="#aa1f314a"
+        android:background="@drawable/backk"
+        android:text="Goals and Aspiration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/core"
+        app:layout_constraintTop_toBottomOf="@id/infoo2" />
+
+    <ImageView
+        android:id="@+id/book"
+        android:layout_width="74dp"
+        android:layout_height="88dp"
+
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/support"
+        app:layout_constraintStart_toStartOf="@id/support"
+        app:layout_constraintTop_toBottomOf="@id/two"
+        app:srcCompat="@drawable/book_shelf" />
+
+    <ImageView
+        android:id="@+id/infoo"
+        android:layout_width="100dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@id/core"
+        app:layout_constraintStart_toStartOf="@id/core"
+        app:layout_constraintTop_toBottomOf="@id/four"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/infoo1"
+        android:layout_width="100dp"
+        android:layout_height="88dp"
+
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@id/weak"
+        app:layout_constraintStart_toStartOf="@id/weak"
+        app:layout_constraintTop_toBottomOf="@id/support"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/infoo2"
+        android:layout_width="100dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintEnd_toEndOf="@id/goals"
+
+        app:layout_constraintStart_toStartOf="@id/goals"
+        app:layout_constraintTop_toBottomOf="@id/core"
+        app:srcCompat="@drawable/info" />
+
+    <TextView
+        android:id="@+id/whitetext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/backrounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weak"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/awar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Self-awareness"
+        android:textColor="#1f314a"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/whitetext" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main"
+        android:layout_width="397dp"
+
+        android:layout_height="314dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/awar"
+        tools:listitem="@layout/cardvieww" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
