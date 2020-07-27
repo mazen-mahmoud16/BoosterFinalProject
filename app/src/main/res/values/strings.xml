@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Booster Final Project</string>
+    <string name="Sign_In"><u>Sign In</u></string>
 </resources>

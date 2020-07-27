@@ -59,4 +59,10 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
     implementation "androidx.activity:activity-ktx:1.1.0"
+
+    //Circular image view dependency
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Navigation bar dependency
+    implementation 'com.google.android.material:material:1.0.0'
 }
