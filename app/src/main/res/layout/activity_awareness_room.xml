@@ -19,6 +19,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/infoo" />
 
+    <ProgressBar
+        android:id="@+id/progress_bar_test"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="100"
+        app:layout_constraintStart_toStartOf="@id/Awareness"
+        app:layout_constraintEnd_toEndOf="@id/Awareness"
+        app:layout_constraintTop_toBottomOf="@id/Awareness"
+        android:indeterminate="true"
+        android:max="100"
+        />
+
     <TextView
         android:id="@+id/Awareness"
         android:layout_width="wrap_content"
@@ -38,7 +51,7 @@
         android:id="@+id/one"
         android:layout_width="38dp"
         android:layout_height="7dp"
-
+        android:visibility="invisible"
         android:layout_marginTop="5dp"
         android:background="@drawable/textback"
         app:layout_constraintStart_toStartOf="@id/Awareness"
@@ -48,7 +61,7 @@
         android:id="@+id/two"
         android:layout_width="38dp"
         android:layout_height="7dp"
-
+        android:visibility="invisible"
         android:layout_marginTop="5dp"
         android:background="@drawable/textbackkk"
         app:layout_constraintEnd_toStartOf="@id/three"
@@ -61,6 +74,7 @@
         android:layout_height="7dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/textbackkk"
+        android:visibility="invisible"
         app:layout_constraintEnd_toStartOf="@id/four"
         app:layout_constraintStart_toEndOf="@id/two"
         app:layout_constraintTop_toBottomOf="@id/Awareness" />
@@ -69,7 +83,7 @@
         android:id="@+id/four"
         android:layout_width="38dp"
         android:layout_height="7dp"
-
+        android:visibility="invisible"
         android:layout_marginTop="5dp"
         android:background="@drawable/textbackkk"
         app:layout_constraintEnd_toStartOf="@id/five"
@@ -80,7 +94,7 @@
         android:id="@+id/five"
         android:layout_width="38dp"
         android:layout_height="7dp"
-
+        android:visibility="invisible"
         android:background="@drawable/textbackkk"
         app:layout_constraintBottom_toBottomOf="@id/four"
         app:layout_constraintEnd_toEndOf="@id/Awareness"

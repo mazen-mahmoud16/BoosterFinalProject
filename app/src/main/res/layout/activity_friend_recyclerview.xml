@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".Friend_recyclerview"
     android:paddingTop="15dp"
     android:paddingBottom="15dp"
     android:paddingLeft="30dp">
