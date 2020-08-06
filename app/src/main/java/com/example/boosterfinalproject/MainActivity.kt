@@ -13,13 +13,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         start.setOnClickListener {
-            val intent:Intent = Intent(this,HomeScrolled::class.java)
-            intent.putExtra("home",false)
+            val intent:Intent = Intent(this,FragmentHolder::class.java)
+            intent.putExtra("home","homeScrolled")
             startActivity(intent)
         }
         login.setOnClickListener {
-            val intent:Intent = Intent(this,HomeScrolled::class.java)
-            intent.putExtra("home",true)
+            val intent:Intent = Intent(this,FragmentHolder::class.java)
+            intent.putExtra("home","home")
             startActivity(intent)
         }
 
