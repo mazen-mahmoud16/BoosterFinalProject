@@ -181,13 +181,5 @@
         app:layout_constraintStart_toStartOf="@id/selfIcon"
         app:layout_constraintTop_toTopOf="@id/selfIcon" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#33d2fcfa"
-        android:foregroundGravity="bottom"
-        app:itemIconSize="25dp"
-        app:itemIconTint="@drawable/navigationselector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/menu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
