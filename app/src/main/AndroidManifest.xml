@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.boosterfinalproject">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,44 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lesson1refrence">
-
-        </activity>
-
-        <activity android:name=".support_system">
-
-        </activity>
-
-        <activity android:name=".Home">
-
-        </activity>
-
-        <activity android:name=".HomeScrolled">
-
-        </activity>
-
-        <activity android:name=".Congrats">
+        <activity android:name=".FragmentHolder"></activity>
+        <activity android:name=".lesson1refrence"></activity>
+        <activity android:name=".support_system"></activity>
+        <activity android:name=".Congrats"></activity>
+        <activity android:name=".Friend"></activity>
+        <activity android:name=".achievementss"></activity>
+        <activity android:name=".AwarenessRoom"></activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <activity android:name=".Friend" >
-
-        </activity>
-
-        <activity android:name=".achievementss">
-
-        </activity>
-
-        <activity android:name=".AwarenessRoom">
-
-        </activity>
-
-        <activity android:name=".MainActivity">
-
         </activity>
 
         <meta-data
