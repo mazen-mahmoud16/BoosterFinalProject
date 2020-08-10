@@ -1,10 +1,19 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.repositories
+
+import com.example.boosterfinalproject.FriendToken
+import com.example.boosterfinalproject.R
 
 object TokenRepository {
     private val tokenList: MutableList<FriendToken> = mutableListOf()
 
     fun tokenData(): List<FriendToken> {
-        tokenList.add(FriendToken("Quick Learner", "Completed 1 course", R.drawable.icon))
+        tokenList.add(
+            FriendToken(
+                "Quick Learner",
+                "Completed 1 course",
+                R.drawable.icon
+            )
+        )
         tokenList.add(
             FriendToken(
                 "Master Mind!",
