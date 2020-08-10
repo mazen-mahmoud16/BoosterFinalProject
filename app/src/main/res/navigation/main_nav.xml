@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/homeScrolled">
+    app:startDestination="@id/home3">
 
     <fragment
         android:id="@+id/homeScrolled"
@@ -18,4 +18,9 @@
         android:id="@+id/home3"
         android:name="com.example.boosterfinalproject.Home"
         android:label="Home" />
+    <fragment
+        android:id="@+id/achievements"
+        android:name="com.example.boosterfinalproject.Achievements"
+        android:label="fragment_achievements"
+        tools:layout="@layout/fragment_achievements" />
 </navigation>

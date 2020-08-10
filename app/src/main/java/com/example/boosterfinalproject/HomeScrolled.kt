@@ -1,5 +1,6 @@
 package com.example.boosterfinalproject
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -22,10 +23,11 @@ class HomeScrolled : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         var nouran = arguments?.getString("abc")?:"aa"
-        Log.e("5ara",nouran)
+        Log.e("home",FragmentHolder.data)
         if(nouran==""){
             findNavController().navigate(HomeScrolledDirections.actionHomeScrolledToHome3()
             )
+//            activity?.startActivity(Intent(requireContext(), AwarenessRoom::class.java))
         }
     }
 
