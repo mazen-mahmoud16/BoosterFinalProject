@@ -1,16 +1,16 @@
 package com.example.boosterfinalproject
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.boosterfinalproject.repositories.TokenRepository
 import kotlinx.android.synthetic.main.activity_friend_recyclerview.view.*
 
-class FriendAdapter(private val context: Context, private val tokenList: List<FriendToken>) :
+class FriendAdapter(private val context: Fragment, private val tokenList: List<FriendToken>) :
     RecyclerView.Adapter<FriendAdapter.TokenViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TokenViewHolder {

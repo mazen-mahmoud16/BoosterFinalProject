@@ -14,7 +14,7 @@
         android:icon="@drawable/graph"
         android:title="" />
     <item
-        android:id="@+id/navigation_user"
+        android:id="@+id/friendFragment"
         android:icon="@drawable/user"
         android:title="" />
 </menu>

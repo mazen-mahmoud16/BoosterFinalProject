@@ -18,4 +18,8 @@
         android:id="@+id/home3"
         android:name="com.example.boosterfinalproject.Home"
         android:label="Home" />
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.example.boosterfinalproject.FriendFragment"
+        android:label="FriendFragment" />
 </navigation>
