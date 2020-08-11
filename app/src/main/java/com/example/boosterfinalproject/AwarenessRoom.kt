@@ -23,12 +23,13 @@ class AwarenessRoom : AppCompatActivity() {
         val LessonList: ArrayList<Data> = ArrayList()
         LessonList.add(Data("Support System", "Lesson 1", "Building an integral support system,\n" +
                 "Pushes you to grow, strech more, mainly asks why things wont work, and bullet proofs ideas","Start"))
-        LessonList.add(Data("Support System", "Lesson 2", "Building an integral support system,\n" +
-                "Pushes you to grow, strech more, mainly asks why things wont work, and bullet proofs ideas","Locked"))
-        LessonList.add(Data("Support System", "Lesson 3", "Building an integral support system,\n" +
-                "Pushes you to grow, strech more, mainly asks why things wont work, and bullet proofs ideas","Locked"))
-        LessonList.add(Data("Support System", "Lesson 4", "Building an integral support system,\n" +
-                "Pushes you to grow, strech more, mainly asks why things wont work, and bullet proofs ideas","Locked"))
+        LessonList.add(Data("Support System", "Lesson 2", "These generic visual supports templates " +
+                "will be a gamechanger for you and your students this comprehensive set is perfect for you!","Locked"))
+        LessonList.add(Data("Support System", "Lesson 3", "If you are looking for a fun and " +
+                "innovative way to motivate your students to improve their handwriting, their skills and their abilities! ","Locked"))
+        LessonList.add(Data("Support System", "Lesson 4", "Understanding who you can count on is a key social and emotional " +
+                "skill we can teach early and reinforce through high school.","Locked"))
+        LessonList.add(Data("Support System", "Quiz", "Good Luck","Start Quiz"))
         return LessonList
 
     }

@@ -31,9 +31,16 @@ class DataAdapter(val context: Context, val DataList:ArrayList<Data>) : Recycler
         holder.lessonNo.setText(dataa.LessonNo)
         holder.description.setText(dataa.LessonDesc)
         holder.buttonn.setText(dataa.ButtonLesson)
-        holder.start.setOnClickListener(){
-            val intent=Intent(context,lesson1refrence::class.java)
-            context.startActivity(intent)
+        if(dataa.ButtonLesson=="Start Quiz"){
+            holder.start.setOnClickListener(){
+                val intent=Intent(context,support_system::class.java)
+                context.startActivity(intent)
+            }
+        }else {
+            holder.start.setOnClickListener() {
+                val intent = Intent(context, lesson1refrence::class.java)
+                context.startActivity(intent)
+            }
         }
 
 
