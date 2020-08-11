@@ -1,6 +1,7 @@
 package com.example.boosterfinalproject
 
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -23,6 +24,8 @@ class lesson1refrence : YouTubeBaseActivity() {
         setContentView(R.layout.activity_lesson1refrence)
 
         initUI()
+        lesson.text=intent.getStringExtra("lesson")+" Reference"
+
 
     }
 

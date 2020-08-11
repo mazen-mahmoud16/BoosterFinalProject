@@ -34,6 +34,7 @@ class DataAdapter(val context: Context, val DataList: ArrayList<Data>) :
         if (dataa.ButtonLesson == "Start Quiz") {
             holder.start.setOnClickListener() {
                 val intent = Intent(context, support_system::class.java)
+
                 context.startActivity(intent)
             }
         } else if (dataa.ButtonLesson == "Claim your gift!") {
@@ -44,6 +45,7 @@ class DataAdapter(val context: Context, val DataList: ArrayList<Data>) :
         } else {
             holder.start.setOnClickListener() {
                 val intent = Intent(context, lesson1refrence::class.java)
+                intent.putExtra("lesson",holder.lessonNo.text.toString())
                 context.startActivity(intent)
             }
         }
