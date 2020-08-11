@@ -19,12 +19,12 @@ class FragmentHolder : AppCompatActivity() {
         setContentView(R.layout.activity_fragment_holder)
         val mainNavController = findNavController(R.id.main_nav_host_fragment)
         main_bottom_nav_view.setupWithNavController(mainNavController)
-        val home = intent.getStringExtra("home")!!
+        /*val home = intent.getStringExtra("home")!!
         val bundle = Bundle()
         Log.e("home", home)
         bundle.putString("abc", home)
         val myFrag = HomeScrolled()
-        myFrag.arguments = bundle
+        myFrag.arguments = bundle*/
 
         //Shared viewModel
 
@@ -38,8 +38,8 @@ class FragmentHolder : AppCompatActivity() {
 
     }
 
-    companion object {
+    /*companion object {
         val data = "dasa"
-    }
+    }*/
 
 }
