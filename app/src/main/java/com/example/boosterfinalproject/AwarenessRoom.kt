@@ -30,6 +30,7 @@ class AwarenessRoom : AppCompatActivity() {
         LessonList.add(Data("Support System", "Lesson 4", "Understanding who you can count on is a key social and emotional " +
                 "skill we can teach early and reinforce through high school.","Locked"))
         LessonList.add(Data("Support System", "Quiz", "Good Luck","Start Quiz"))
+        LessonList.add(Data("Support System", "Finished", "Thanks for finishing the lesson and the quiz!","Claim your gift!"))
         return LessonList
 
     }
