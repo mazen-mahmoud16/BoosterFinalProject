@@ -9,7 +9,7 @@ class Friend : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_friend)
-        FriendAdapter(this, viewModel.getTokenData())
+        //FriendAdapter(this, viewModel.getTokenData())
 
 
     }

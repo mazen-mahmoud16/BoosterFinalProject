@@ -13,12 +13,11 @@
         android:layout_height="37dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="28dp"
-        android:textColor="#aa1f314a"
         android:background="@drawable/backk"
         android:text="Core Value"
+        android:textColor="#aa1f314a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/infoo" />
-
 
 
     <TextView
@@ -101,9 +100,9 @@
         android:layout_width="167dp"
         android:layout_height="37dp"
 
-android:textColor="#aa1f314a"
-android:background="@drawable/backk"
+        android:background="@drawable/backk"
         android:text="Strength-Weakness"
+        android:textColor="#aa1f314a"
         app:layout_constraintStart_toStartOf="@id/support"
         app:layout_constraintTop_toTopOf="@id/goals" />
 
@@ -114,9 +113,9 @@ android:background="@drawable/backk"
         android:layout_marginTop="10dp"
 
         android:alpha="1"
-        android:textColor="#aa1f314a"
         android:background="@drawable/backk"
         android:text="Goals and Aspiration"
+        android:textColor="#aa1f314a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/core"

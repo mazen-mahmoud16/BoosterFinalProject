@@ -14,4 +14,8 @@
         android:name="com.example.boosterfinalproject.Achievements"
         android:label="fragment_achievements"
         tools:layout="@layout/fragment_achievements" />
+    <fragment
+        android:id="@+id/friendFragment2"
+        android:name="com.example.boosterfinalproject.FriendFragment"
+        android:label="FriendFragment" />
 </navigation>
