@@ -1,5 +1,7 @@
 package com.example.boosterfinalproject
 
+import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +9,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.cardvieww.view.*
 
-class DataAdapter(val DataList:ArrayList<Data>) : RecyclerView.Adapter<DataAdapter.DataItemViewHolder>() {
+class DataAdapter(val context: Context, val DataList:ArrayList<Data>) : RecyclerView.Adapter<DataAdapter.DataItemViewHolder>() {
 
 
 
@@ -29,6 +31,11 @@ class DataAdapter(val DataList:ArrayList<Data>) : RecyclerView.Adapter<DataAdapt
         holder.lessonNo.setText(dataa.LessonNo)
         holder.description.setText(dataa.LessonDesc)
         holder.buttonn.setText(dataa.ButtonLesson)
+        holder.start.setOnClickListener(){
+            val intent=Intent(context,lesson1refrence::class.java)
+            context.startActivity(intent)
+        }
+
 
     }
 
@@ -41,6 +48,7 @@ class DataAdapter(val DataList:ArrayList<Data>) : RecyclerView.Adapter<DataAdapt
         val lessonNo=itemView.lesson
         val description=itemView.desc
         val buttonn=itemView.start
+        val start=itemView.start
     }
 
 

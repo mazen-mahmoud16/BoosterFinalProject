@@ -10,7 +10,7 @@ class AwarenessRoom : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_awareness_room)
-        val dataaAdapter=DataAdapter(getLessonList())
+        val dataaAdapter=DataAdapter(this,getLessonList())
         main.adapter=dataaAdapter
         core.setOnClickListener(){
             core.setBackground(getDrawable(R.drawable.backrounded))
