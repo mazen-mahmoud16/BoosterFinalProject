@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <WebView
+    <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/videoView"
         android:layout_width="411dp"
         android:layout_height="191dp"
@@ -29,16 +29,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lesson" />
 
+
+
     <ImageView
         android:id="@+id/shape"
         android:layout_width="46dp"
         android:layout_height="71dp"
-
         android:layout_marginStart="36dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shape" />
+        android:src="@drawable/shape" />
 
     <TextView
         android:id="@+id/lesson"
