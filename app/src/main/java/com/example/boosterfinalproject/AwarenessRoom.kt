@@ -1,5 +1,6 @@
 package com.example.boosterfinalproject
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View.OnTouchListener
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,43 @@ class AwarenessRoom : AppCompatActivity() {
         main.adapter=dataaAdapter
         core.setOnClickListener(){
             core.setBackground(getDrawable(R.drawable.backrounded))
+            core.setTextColor(Color.BLACK)
+            support.setBackground(getDrawable(R.drawable.backk))
+            support.setTextColor(Color.parseColor("#aa1f314a"))
+            weak.setBackground(getDrawable(R.drawable.backk))
+            weak.setTextColor(Color.parseColor("#aa1f314a"))
+            goals.setBackground(getDrawable(R.drawable.backk))
+            goals.setTextColor(Color.parseColor("#aa1f314a"))
+        }
+        support.setOnClickListener(){
+            support.setBackground(getDrawable(R.drawable.backrounded))
+            support.setTextColor(Color.BLACK)
+            core.setBackground(getDrawable(R.drawable.backk))
+            core.setTextColor(Color.parseColor("#aa1f314a"))
+            weak.setBackground(getDrawable(R.drawable.backk))
+            weak.setTextColor(Color.parseColor("#aa1f314a"))
+            goals.setBackground(getDrawable(R.drawable.backk))
+            goals.setTextColor(Color.parseColor("#aa1f314a"))
+        }
+        weak.setOnClickListener(){
+            weak.setBackground(getDrawable(R.drawable.backrounded))
+            weak.setTextColor(Color.BLACK)
+            support.setBackground(getDrawable(R.drawable.backk))
+            support.setTextColor(Color.parseColor("#aa1f314a"))
+            core.setBackground(getDrawable(R.drawable.backk))
+            core.setTextColor(Color.parseColor("#aa1f314a"))
+            goals.setBackground(getDrawable(R.drawable.backk))
+            goals.setTextColor(Color.parseColor("#aa1f314a"))
+        }
+        goals.setOnClickListener(){
+            goals.setBackground(getDrawable(R.drawable.backrounded))
+            goals.setTextColor(Color.BLACK)
+            support.setBackground(getDrawable(R.drawable.backk))
+            support.setTextColor(Color.parseColor("#aa1f314a"))
+            weak.setBackground(getDrawable(R.drawable.backk))
+            weak.setTextColor(Color.parseColor("#aa1f314a"))
+            core.setBackground(getDrawable(R.drawable.backk))
+            core.setTextColor(Color.parseColor("#aa1f314a"))
         }
 
 
