@@ -1,5 +1,6 @@
 package com.example.boosterfinalproject
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -27,6 +28,9 @@ class Home : Fragment() {
         //var visibility = arguments?.getString("visibility")?:"aa"
         //Log.e("home",visibility)
         checkVisibility(MainActivity.data)
+        selfAwareness.setOnClickListener(){
+            activity?.startActivity(Intent(requireContext(),AwarenessRoom::class.java))
+        }
     }
     fun checkVisibility( visibility:String){
         if(visibility=="visible") {
@@ -43,4 +47,5 @@ class Home : Fragment() {
         else Log.e("home",visibility)
 
     }
+
 }

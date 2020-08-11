@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_fragment_holder.*
 
 class FragmentHolder : AppCompatActivity() {
 
-    
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,8 +39,5 @@ class FragmentHolder : AppCompatActivity() {
 
     }
 
-    /*companion object {
-        val data = "dasa"
-    }*/
 
 }
