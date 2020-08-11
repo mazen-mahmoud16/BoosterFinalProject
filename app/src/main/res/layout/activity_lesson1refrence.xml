@@ -74,7 +74,7 @@
         android:layout_height="6dp"
 
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintStart_toStartOf="@id/support"
         app:layout_constraintTop_toBottomOf="@id/support" />
 
@@ -83,7 +83,7 @@
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/third"
         app:layout_constraintStart_toEndOf="@id/first"
         app:layout_constraintTop_toBottomOf="@id/support" />
@@ -93,7 +93,7 @@
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/fourth"
         app:layout_constraintStart_toEndOf="@id/second"
         app:layout_constraintTop_toBottomOf="@id/support" />
@@ -103,7 +103,7 @@
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/fifth"
         app:layout_constraintStart_toEndOf="@id/third"
         app:layout_constraintTop_toBottomOf="@id/support" />
@@ -112,7 +112,7 @@
         android:id="@+id/fifth"
         android:layout_width="35dp"
         android:layout_height="6dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintBottom_toBottomOf="@id/fourth"
         app:layout_constraintEnd_toEndOf="@id/support"
         app:layout_constraintTop_toTopOf="@id/fourth" />
