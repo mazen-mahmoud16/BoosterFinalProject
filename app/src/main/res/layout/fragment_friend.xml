@@ -29,7 +29,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/circle"
-        tools:src="@drawable/person_cropped"
+        android:src="@drawable/person_cropped"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik"
-        tools:text="Emily Petersz"
+        android:text="Emily Petersz"
         android:textColor="#1f314a"
         android:textSize="24sp"
         app:layout_constraintHeight_percent="0.9"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/rubik"
         android:textColor="#1f314a"
-        tools:text="Student"
+        android:text="Student"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25"
-        tools:text="7" />
+        android:text="7" />
 
     <TextView
         android:id="@+id/text2"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toStartOf="@+id/text3"
         app:layout_constraintStart_toEndOf="@+id/text1"
         app:layout_constraintTop_toTopOf="@+id/text1"
-        tools:text="193,79" />
+        android:text="193,79" />
 
     <TextView
         android:id="@+id/text3"
@@ -103,7 +103,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView24"
         app:layout_constraintTop_toTopOf="@+id/text2"
-        tools:text="11" />
+        android:text="11" />
 
     <TextView
         android:id="@+id/textView"
@@ -117,7 +117,7 @@
         app:layout_constraintEnd_toEndOf="@+id/text1"
         app:layout_constraintStart_toStartOf="@+id/text1"
         app:layout_constraintTop_toBottomOf="@+id/text1"
-        tools:text="Courses"
+        android:text="Courses"
         android:textAllCaps="true"/>
 
     <TextView
@@ -133,7 +133,7 @@
         app:layout_constraintEnd_toEndOf="@+id/text2"
         app:layout_constraintStart_toStartOf="@+id/text2"
         app:layout_constraintTop_toBottomOf="@+id/text2"
-        tools:text="Points" />
+        android:text="Points" />
 
     <TextView
         android:id="@+id/textView3"
@@ -148,7 +148,7 @@
         app:layout_constraintEnd_toEndOf="@+id/text3"
         app:layout_constraintStart_toStartOf="@+id/text3"
         app:layout_constraintTop_toBottomOf="@+id/text3"
-        tools:text="Rank" />
+        android:text="Rank" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -160,7 +160,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:listitem="@layout/activity_friend_recyclerview" />
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

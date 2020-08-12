@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lesson1refrence"
+    tools:context=".Lesson1refrence"
     android:background="@drawable/gradient_bg">
 
     <TextView
@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <WebView
+    <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/videoView"
         android:layout_width="411dp"
         android:layout_height="191dp"
@@ -29,16 +29,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lesson" />
 
+
+
     <ImageView
         android:id="@+id/shape"
         android:layout_width="46dp"
         android:layout_height="71dp"
-
         android:layout_marginStart="36dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/shape" />
+        android:src="@drawable/shape" />
 
     <TextView
         android:id="@+id/lesson"
@@ -47,15 +48,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/txtbg"
-        android:gravity="center"
+        android:gravity="start"
+        android:paddingTop="6dp"
+        android:paddingStart="10dp"
         android:text="Lesson 1 Reference"
-        android:textColor="#1f314a"
+        android:textColor="@android:color/black"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/shape" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/check"
         android:layout_width="55dp"
         android:layout_height="36dp"
         android:layout_marginTop="56dp"
@@ -71,7 +74,7 @@
         android:layout_height="6dp"
 
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintStart_toStartOf="@id/support"
         app:layout_constraintTop_toBottomOf="@id/support" />
 
@@ -80,7 +83,7 @@
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/third"
         app:layout_constraintStart_toEndOf="@id/first"
         app:layout_constraintTop_toBottomOf="@id/support" />
@@ -90,7 +93,7 @@
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/fourth"
         app:layout_constraintStart_toEndOf="@id/second"
         app:layout_constraintTop_toBottomOf="@id/support" />
@@ -100,7 +103,7 @@
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/fifth"
         app:layout_constraintStart_toEndOf="@id/third"
         app:layout_constraintTop_toBottomOf="@id/support" />
@@ -109,7 +112,7 @@
         android:id="@+id/fifth"
         android:layout_width="35dp"
         android:layout_height="6dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintBottom_toBottomOf="@id/fourth"
         app:layout_constraintEnd_toEndOf="@id/support"
         app:layout_constraintTop_toTopOf="@id/fourth" />

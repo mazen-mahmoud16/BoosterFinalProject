@@ -13,24 +13,12 @@
         android:layout_height="37dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="28dp"
-        android:textColor="#aa1f314a"
         android:background="@drawable/backk"
         android:text="Core Value"
+        android:textColor="#aa1f314a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/infoo" />
 
-    <ProgressBar
-        android:id="@+id/progress_bar_test"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:progress="100"
-        app:layout_constraintStart_toStartOf="@id/Awareness"
-        app:layout_constraintEnd_toEndOf="@id/Awareness"
-        app:layout_constraintTop_toBottomOf="@id/Awareness"
-        android:indeterminate="true"
-        android:max="100"
-        />
 
     <TextView
         android:id="@+id/Awareness"
@@ -51,7 +39,6 @@
         android:id="@+id/one"
         android:layout_width="38dp"
         android:layout_height="7dp"
-        android:visibility="invisible"
         android:layout_marginTop="5dp"
         android:background="@drawable/textback"
         app:layout_constraintStart_toStartOf="@id/Awareness"
@@ -61,7 +48,6 @@
         android:id="@+id/two"
         android:layout_width="38dp"
         android:layout_height="7dp"
-        android:visibility="invisible"
         android:layout_marginTop="5dp"
         android:background="@drawable/textbackkk"
         app:layout_constraintEnd_toStartOf="@id/three"
@@ -74,7 +60,6 @@
         android:layout_height="7dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/textbackkk"
-        android:visibility="invisible"
         app:layout_constraintEnd_toStartOf="@id/four"
         app:layout_constraintStart_toEndOf="@id/two"
         app:layout_constraintTop_toBottomOf="@id/Awareness" />
@@ -83,7 +68,6 @@
         android:id="@+id/four"
         android:layout_width="38dp"
         android:layout_height="7dp"
-        android:visibility="invisible"
         android:layout_marginTop="5dp"
         android:background="@drawable/textbackkk"
         app:layout_constraintEnd_toStartOf="@id/five"
@@ -94,7 +78,6 @@
         android:id="@+id/five"
         android:layout_width="38dp"
         android:layout_height="7dp"
-        android:visibility="invisible"
         android:background="@drawable/textbackkk"
         app:layout_constraintBottom_toBottomOf="@id/four"
         app:layout_constraintEnd_toEndOf="@id/Awareness"
@@ -117,9 +100,9 @@
         android:layout_width="167dp"
         android:layout_height="37dp"
 
-android:textColor="#aa1f314a"
-android:background="@drawable/backk"
+        android:background="@drawable/backk"
         android:text="Strength-Weakness"
+        android:textColor="#aa1f314a"
         app:layout_constraintStart_toStartOf="@id/support"
         app:layout_constraintTop_toTopOf="@id/goals" />
 
@@ -130,9 +113,9 @@ android:background="@drawable/backk"
         android:layout_marginTop="10dp"
 
         android:alpha="1"
-        android:textColor="#aa1f314a"
         android:background="@drawable/backk"
         android:text="Goals and Aspiration"
+        android:textColor="#aa1f314a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/core"

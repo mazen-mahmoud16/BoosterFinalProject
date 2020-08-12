@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#d5fdfb"
-    tools:context=".achievementss">
+    tools:context=".Achievements">
 
     <TextView
         android:id="@+id/textView2"
@@ -49,7 +49,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-android:tint="#22d0c4"
+        android:tint="#22d0c4"
         android:scaleType="centerCrop"
         android:background="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,32 +61,15 @@ android:tint="#22d0c4"
         android:layout_height="0dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/container"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/leaderbord"
         app:layout_constraintVertical_bias="1.0" />
 
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="409dp"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="412dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom"
-            android:background="#d2fcfa"
-            app:itemIconTint="@drawable/nav"
 
-            app:menu="@menu/menu_nouran"
-            />
-    </FrameLayout>
 
 
 

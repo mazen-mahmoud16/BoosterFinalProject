@@ -3,23 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    app:startDestination="@id/homeScrolled">
+    app:startDestination="@id/home3">
 
-    <fragment
-        android:id="@+id/homeScrolled"
-        android:name="com.example.boosterfinalproject.HomeScrolled"
-        android:label="fragment_home_scrolled"
-        tools:layout="@layout/fragment_home_scrolled" >
-        <action
-            android:id="@+id/action_homeScrolled_to_home3"
-            app:destination="@id/home3" />
-    </fragment>
     <fragment
         android:id="@+id/home3"
         android:name="com.example.boosterfinalproject.Home"
         android:label="Home" />
     <fragment
-        android:id="@+id/friendFragment"
+        android:id="@+id/achievements"
+        android:name="com.example.boosterfinalproject.Achievements"
+        android:label="fragment_achievements"
+        tools:layout="@layout/fragment_achievements" />
+    <fragment
+        android:id="@+id/friendFragment2"
         android:name="com.example.boosterfinalproject.FriendFragment"
         android:label="FriendFragment" />
 </navigation>

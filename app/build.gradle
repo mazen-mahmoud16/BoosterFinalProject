@@ -72,4 +72,7 @@ dependencies {
     //Navigation components
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
+
+    //Youtube Player Dependency
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
 }

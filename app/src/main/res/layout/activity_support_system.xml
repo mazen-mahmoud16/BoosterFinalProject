@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_bg"
-    tools:context=".support_system">
+    tools:context=".SupportSystem">
 
     <Button
         android:id="@+id/submit"
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginBottom="6dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         android:text="Submit"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
@@ -28,13 +28,11 @@
         android:layout_height="160dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/textbg"
-        android:gravity="bottom"
-        android:paddingStart="35sp"
-        android:paddingBottom="20sp"
-        android:text="Answer 3"
+        android:gravity="center"
+        android:text="Nothing"
         android:textAllCaps="false"
         android:textColor="#7D8C8B"
-        android:textSize="20sp"
+        android:textSize="27sp"
         app:layout_constraintBottom_toTopOf="@+id/submit"
         app:layout_constraintEnd_toStartOf="@id/Answer4"
         app:layout_constraintHorizontal_bias="0.457"
@@ -47,13 +45,11 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/textbg"
-        android:gravity="bottom"
-        android:paddingStart="35sp"
-        android:paddingBottom="20sp"
-        android:text="Answer 4"
+        android:gravity="center"
+        android:text="Skills and knowledge"
         android:textAllCaps="false"
         android:textColor="#7D8C8B"
-        android:textSize="20sp"
+        android:textSize="27sp"
         app:layout_constraintBottom_toTopOf="@+id/submit"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -63,13 +59,11 @@
         android:layout_height="160dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/roundedborder"
-        android:gravity="bottom"
-        android:paddingStart="35sp"
-        android:paddingBottom="20sp"
-        android:text="Answer 1"
+        android:gravity="center"
+        android:text="Skills"
         android:textAllCaps="false"
         android:textColor="#22d0c4"
-        android:textSize="20sp"
+        android:textSize="27sp"
         app:layout_constraintBottom_toTopOf="@id/Answer3"
         app:layout_constraintEnd_toStartOf="@+id/Answer2"
         app:layout_constraintHorizontal_bias="0.457"
@@ -82,13 +76,11 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/textbg"
-        android:gravity="bottom"
-        android:paddingStart="35sp"
-        android:paddingBottom="20sp"
-        android:text="Answer 2"
+        android:gravity="center"
+        android:text="Knowledge"
         android:textAllCaps="false"
         android:textColor="#7D8C8B"
-        android:textSize="20sp"
+        android:textSize="27sp"
         app:layout_constraintBottom_toTopOf="@id/Answer4"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -97,7 +89,7 @@
         android:layout_width="216dp"
         android:layout_height="119dp"
         android:layout_marginStart="16dp"
-        android:text="Course related question goes in here?"
+        android:text="Support Systems helps you to improve"
         android:textColor="#1f314a"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -183,52 +175,51 @@
         app:srcCompat="@drawable/profile" />
 
     <TextView
-        android:id="@+id/first"
+        android:id="@+id/first2"
         android:layout_width="35dp"
         android:layout_height="6dp"
-
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
+        android:background="@drawable/textback"
         app:layout_constraintStart_toStartOf="@id/support"
         app:layout_constraintTop_toBottomOf="@id/support" />
 
     <TextView
-        android:id="@+id/second"
+        android:id="@+id/second2"
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
-        app:layout_constraintEnd_toStartOf="@id/third"
-        app:layout_constraintStart_toEndOf="@id/first"
+        android:background="@drawable/textbackkk"
+        app:layout_constraintEnd_toStartOf="@id/third2"
+        app:layout_constraintStart_toEndOf="@id/first2"
         app:layout_constraintTop_toBottomOf="@id/support" />
 
     <TextView
-        android:id="@+id/third"
+        android:id="@+id/third2"
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
-        app:layout_constraintEnd_toStartOf="@id/fourth"
-        app:layout_constraintStart_toEndOf="@id/second"
+        android:background="@drawable/textbackkk"
+        app:layout_constraintEnd_toStartOf="@id/fourth2"
+        app:layout_constraintStart_toEndOf="@id/second2"
         app:layout_constraintTop_toBottomOf="@id/support" />
 
     <TextView
-        android:id="@+id/fourth"
+        android:id="@+id/fourth2"
         android:layout_width="35dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/button_bg_rounded_corners"
-        app:layout_constraintEnd_toStartOf="@id/fifth"
-        app:layout_constraintStart_toEndOf="@id/third"
+        android:background="@drawable/textbackkk"
+        app:layout_constraintEnd_toStartOf="@id/fifth2"
+        app:layout_constraintStart_toEndOf="@id/third2"
         app:layout_constraintTop_toBottomOf="@id/support" />
 
     <TextView
-        android:id="@+id/fifth"
+        android:id="@+id/fifth2"
         android:layout_width="35dp"
         android:layout_height="6dp"
-        android:background="@drawable/button_bg_rounded_corners"
-        app:layout_constraintBottom_toBottomOf="@id/fourth"
+        android:background="@drawable/textbackkk"
+        app:layout_constraintBottom_toBottomOf="@id/fourth2"
         app:layout_constraintEnd_toEndOf="@id/support"
-        app:layout_constraintTop_toTopOf="@id/fourth" />
+        app:layout_constraintTop_toTopOf="@id/fourth2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
