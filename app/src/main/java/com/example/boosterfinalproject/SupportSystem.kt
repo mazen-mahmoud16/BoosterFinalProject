@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_lesson1refrence.*
 import kotlinx.android.synthetic.main.activity_support_system.*
 import kotlinx.android.synthetic.main.activity_support_system.lesson
 
-class support_system : AppCompatActivity() {
+class SupportSystem : AppCompatActivity() {
     var answer: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_lesson1refrence.*
 import kotlinx.android.synthetic.main.activity_lesson1refrence.lesson
 import kotlinx.android.synthetic.main.activity_support_system.*
 
-class lesson1refrence : YouTubeBaseActivity() {
+class Lesson1refrence : YouTubeBaseActivity() {
 
     companion object {
         val videoID="a4NT5iBFuZs"

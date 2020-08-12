@@ -2,15 +2,14 @@ package com.example.boosterfinalproject
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.cardvieww.view.*
 
-class DataAdapter(val context: Context, val DataList: ArrayList<Data>) :
-    RecyclerView.Adapter<DataAdapter.DataItemViewHolder>() {
+class LessonAdapter(val context: Context, val lessonList: ArrayList<Lesson>) :
+    RecyclerView.Adapter<LessonAdapter.DataItemViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataItemViewHolder {
@@ -20,11 +19,11 @@ class DataAdapter(val context: Context, val DataList: ArrayList<Data>) :
     }
 
     override fun getItemCount(): Int {
-        return DataList.size
+        return lessonList.size
     }
 
     override fun onBindViewHolder(holder: DataItemViewHolder, position: Int) {
-        val dataa: Data = DataList.get(position)
+        val dataa: Lesson = lessonList.get(position)
 
 
         holder.title.setText(dataa.LessonTitle)
@@ -33,7 +32,7 @@ class DataAdapter(val context: Context, val DataList: ArrayList<Data>) :
         holder.buttonn.setText(dataa.ButtonLesson)
         if (dataa.ButtonLesson == "Start Quiz") {
             holder.start.setOnClickListener() {
-                val intent = Intent(context, support_system::class.java)
+                val intent = Intent(context, SupportSystem::class.java)
                 intent.putExtra("lesson",holder.lessonNo.text.toString())
                 context.startActivity(intent)
             }
@@ -44,7 +43,7 @@ class DataAdapter(val context: Context, val DataList: ArrayList<Data>) :
             }
         } else {
             holder.start.setOnClickListener() {
-                val intent = Intent(context, lesson1refrence::class.java)
+                val intent = Intent(context, Lesson1refrence::class.java)
                 intent.putExtra("lesson",holder.lessonNo.text.toString())
                 context.startActivity(intent)
             }
