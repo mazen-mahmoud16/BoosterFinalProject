@@ -1,12 +1,15 @@
 package com.example.boosterfinalproject.repositories
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.example.boosterfinalproject.FriendToken
 import com.example.boosterfinalproject.R
 
 object TokenRepository {
     private val tokenList: MutableList<FriendToken> = mutableListOf()
 
-    fun tokenData(): List<FriendToken> {
+    fun tokenData(): LiveData<List<FriendToken>> {
+        val tokenLiveData:MutableLiveData<List<FriendToken>> = MutableLiveData()
         tokenList.add(
             FriendToken(
                 "Quick Learner",
@@ -35,6 +38,7 @@ object TokenRepository {
                 R.drawable.icon_4
             )
         )
-        return tokenList
+        tokenLiveData.postValue(tokenList)
+        return tokenLiveData
     }
 }

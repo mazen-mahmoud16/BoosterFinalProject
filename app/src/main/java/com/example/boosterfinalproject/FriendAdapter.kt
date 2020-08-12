@@ -21,7 +21,7 @@ class FriendAdapter(private val context: Fragment, private val tokenList: List<F
     }
 
     override fun getItemCount(): Int {
-        return TokenRepository.tokenData().size
+        return tokenList.size
     }
 
     override fun onBindViewHolder(holder: TokenViewHolder, position: Int) {
