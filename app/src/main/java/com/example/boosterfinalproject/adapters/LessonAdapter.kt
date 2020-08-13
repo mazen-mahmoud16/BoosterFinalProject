@@ -13,7 +13,7 @@ import com.example.boosterfinalproject.ui.Activities.SupportSystem
 import com.example.boosterfinalproject.models.Lesson
 import kotlinx.android.synthetic.main.cardvieww.view.*
 
-class LessonAdapter(val context: Context, val lessonList: ArrayList<Lesson>) :
+class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
     RecyclerView.Adapter<LessonAdapter.DataItemViewHolder>() {
 
 
