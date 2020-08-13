@@ -2,7 +2,6 @@ package com.example.boosterfinalproject.repositories
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.boosterfinalproject.models.FriendToken
 import com.example.boosterfinalproject.models.Lesson
 
 object LessonRepository {
