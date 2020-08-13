@@ -4,12 +4,9 @@ import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.boosterfinalproject.R
 import com.example.boosterfinalproject.adapters.LessonAdapter
-import com.example.boosterfinalproject.models.Lesson
-import com.example.boosterfinalproject.viewmodels.FriendViewModel
 import com.example.boosterfinalproject.viewmodels.LessonViewModel
 import kotlinx.android.synthetic.main.activity_awareness_room.*
 
@@ -29,49 +26,64 @@ class AwarenessRoom : AppCompatActivity() {
         })
 
         core.setOnClickListener() {
-            core.setBackground(getDrawable(R.drawable.backrounded))
-            core.setTextColor(Color.BLACK)
-            support.setBackground(getDrawable(R.drawable.backk))
-            support.setTextColor(Color.parseColor("#aa1f314a"))
-            weak.setBackground(getDrawable(R.drawable.backk))
-            weak.setTextColor(Color.parseColor("#aa1f314a"))
-            goals.setBackground(getDrawable(R.drawable.backk))
-            goals.setTextColor(Color.parseColor("#aa1f314a"))
+            coreClicked()
         }
         support.setOnClickListener() {
-            support.setBackground(getDrawable(R.drawable.backrounded))
-            support.setTextColor(Color.BLACK)
-            core.setBackground(getDrawable(R.drawable.backk))
-            core.setTextColor(Color.parseColor("#aa1f314a"))
-            weak.setBackground(getDrawable(R.drawable.backk))
-            weak.setTextColor(Color.parseColor("#aa1f314a"))
-            goals.setBackground(getDrawable(R.drawable.backk))
-            goals.setTextColor(Color.parseColor("#aa1f314a"))
+            supportClicked()
         }
         weak.setOnClickListener() {
-            weak.setBackground(getDrawable(R.drawable.backrounded))
-            weak.setTextColor(Color.BLACK)
-            support.setBackground(getDrawable(R.drawable.backk))
-            support.setTextColor(Color.parseColor("#aa1f314a"))
-            core.setBackground(getDrawable(R.drawable.backk))
-            core.setTextColor(Color.parseColor("#aa1f314a"))
-            goals.setBackground(getDrawable(R.drawable.backk))
-            goals.setTextColor(Color.parseColor("#aa1f314a"))
+            weakClicked()
         }
         goals.setOnClickListener() {
-            goals.setBackground(getDrawable(R.drawable.backrounded))
-            goals.setTextColor(Color.BLACK)
-            support.setBackground(getDrawable(R.drawable.backk))
-            support.setTextColor(Color.parseColor("#aa1f314a"))
-            weak.setBackground(getDrawable(R.drawable.backk))
-            weak.setTextColor(Color.parseColor("#aa1f314a"))
-            core.setBackground(getDrawable(R.drawable.backk))
-            core.setTextColor(Color.parseColor("#aa1f314a"))
+            goalsClicked()
         }
 
 
     }
-
+    /**
+     * These functions to highlight the button selected by the user and to unhighlight
+     * any other button
+     **/
+    fun supportClicked() {
+        support.setBackground(getDrawable(R.drawable.backrounded))
+        support.setTextColor(Color.BLACK)
+        core.setBackground(getDrawable(R.drawable.backk))
+        core.setTextColor(Color.parseColor("#aa1f314a"))
+        weak.setBackground(getDrawable(R.drawable.backk))
+        weak.setTextColor(Color.parseColor("#aa1f314a"))
+        goals.setBackground(getDrawable(R.drawable.backk))
+        goals.setTextColor(Color.parseColor("#aa1f314a"))
+    }
+    fun coreClicked(){
+        core.setBackground(getDrawable(R.drawable.backrounded))
+        core.setTextColor(Color.BLACK)
+        support.setBackground(getDrawable(R.drawable.backk))
+        support.setTextColor(Color.parseColor("#aa1f314a"))
+        weak.setBackground(getDrawable(R.drawable.backk))
+        weak.setTextColor(Color.parseColor("#aa1f314a"))
+        goals.setBackground(getDrawable(R.drawable.backk))
+        goals.setTextColor(Color.parseColor("#aa1f314a"))
+    }
+    fun weakClicked(){
+        weak.setBackground(getDrawable(R.drawable.backrounded))
+        weak.setTextColor(Color.BLACK)
+        support.setBackground(getDrawable(R.drawable.backk))
+        support.setTextColor(Color.parseColor("#aa1f314a"))
+        core.setBackground(getDrawable(R.drawable.backk))
+        core.setTextColor(Color.parseColor("#aa1f314a"))
+        goals.setBackground(getDrawable(R.drawable.backk))
+        goals.setTextColor(Color.parseColor("#aa1f314a"))
+    }
+    fun goalsClicked(){
+        goals.setBackground(getDrawable(R.drawable.backrounded))
+        goals.setTextColor(Color.BLACK)
+        support.setBackground(getDrawable(R.drawable.backk))
+        support.setTextColor(Color.parseColor("#aa1f314a"))
+        weak.setBackground(getDrawable(R.drawable.backk))
+        weak.setTextColor(Color.parseColor("#aa1f314a"))
+        core.setBackground(getDrawable(R.drawable.backk))
+        core.setTextColor(Color.parseColor("#aa1f314a"))
+    }
 }
 
 
