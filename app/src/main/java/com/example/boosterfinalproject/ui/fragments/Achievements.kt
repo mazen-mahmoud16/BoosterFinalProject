@@ -5,84 +5,32 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.boosterfinalproject.adapters.PersonAdapter
-import com.example.boosterfinalproject.models.Person
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import com.example.boosterfinalproject.R
+import com.example.boosterfinalproject.adapters.PersonAdapter
+import com.example.boosterfinalproject.viewmodels.PersonViewModel
 import kotlinx.android.synthetic.main.fragment_achievements.*
 
 
 class Achievements : Fragment() {
 
-
+    private val viewModel: PersonViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        viewModel.getPersonData().observe(viewLifecycleOwner, Observer {
+            main.adapter=PersonAdapter(it)
+        })
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_achievements, container, false)
 
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        val z = getPersons()
-        val adapter = PersonAdapter(z)
-        main.adapter = adapter
-    }
-
-    fun getPersons(): ArrayList<Person> {
-        val persons: ArrayList<Person> = ArrayList()
-        persons.add(
-            Person(
-                "Nourhan",
-                "600,765",
-                1,
-                R.drawable.girl2
-            )
-        )
-        persons.add(
-            Person(
-                "Yaya",
-                "590,189",
-                2,
-                R.drawable.jake_img
-            )
-        )
-        persons.add(
-            Person(
-                "Mezu",
-                "460,765",
-                3,
-                R.drawable.charlie_img
-            )
-        )
-        persons.add(
-            Person(
-                "Marabella",
-                "300,432",
-                4,
-                R.drawable.emma_img
-            )
-        )
-        persons.add(
-            Person(
-                "Anoja",
-                "100,754",
-                5,
-                R.drawable.sofia_img
-            )
-        )
-        persons.add(
-            Person(
-                "Sooo",
-                "70,655",
-                6,
-                R.drawable.girl
-            )
-        )
-        return persons
-    }
 
 
 

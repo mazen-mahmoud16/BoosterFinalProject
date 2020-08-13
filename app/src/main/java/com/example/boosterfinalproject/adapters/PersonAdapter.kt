@@ -11,7 +11,7 @@ import com.example.boosterfinalproject.models.Person
 import kotlinx.android.synthetic.main.item.view.*
 import kotlinx.android.synthetic.main.item.view.item
 
-class PersonAdapter(val Personlist:ArrayList<Person>) : RecyclerView.Adapter<PersonAdapter.viewHolder>() {
+class PersonAdapter(val Personlist:List<Person>) : RecyclerView.Adapter<PersonAdapter.viewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
         val layoutinflater=LayoutInflater.from(parent.context).inflate(R.layout.item,parent,false)

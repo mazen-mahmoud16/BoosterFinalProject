@@ -20,7 +20,7 @@ class FriendFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        //FriendAdapter(this, viewModel.getTokenData())
+
         viewModel.getTokenData().observe(viewLifecycleOwner, Observer {
             recyclerView.adapter =
                 FriendAdapter(this, it)
