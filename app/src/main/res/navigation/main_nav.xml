@@ -7,15 +7,15 @@
 
     <fragment
         android:id="@+id/home3"
-        android:name="com.example.boosterfinalproject.Home"
+        android:name="com.example.boosterfinalproject.ui.fragments.Home"
         android:label="Home" />
     <fragment
         android:id="@+id/achievements"
-        android:name="com.example.boosterfinalproject.Achievements"
+        android:name="com.example.boosterfinalproject.ui.fragments.Achievements"
         android:label="fragment_achievements"
         tools:layout="@layout/fragment_achievements" />
     <fragment
         android:id="@+id/friendFragment2"
-        android:name="com.example.boosterfinalproject.FriendFragment"
+        android:name="com.example.boosterfinalproject.ui.fragments.FriendFragment"
         android:label="FriendFragment" />
 </navigation>

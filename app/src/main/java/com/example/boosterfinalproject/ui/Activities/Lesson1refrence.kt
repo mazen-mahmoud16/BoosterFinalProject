@@ -1,17 +1,15 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.ui.Activities
 
 
-import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.boosterfinalproject.R
 import com.google.android.youtube.player.YouTubeBaseActivity
 import com.google.android.youtube.player.YouTubeInitializationResult
 import com.google.android.youtube.player.YouTubePlayer
 import kotlinx.android.synthetic.main.activity_lesson1refrence.*
 import kotlinx.android.synthetic.main.activity_lesson1refrence.lesson
-import kotlinx.android.synthetic.main.activity_support_system.*
 
 class Lesson1refrence : YouTubeBaseActivity() {
 

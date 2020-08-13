@@ -1,4 +1,4 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -6,6 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.boosterfinalproject.ui.Activities.Congrats
+import com.example.boosterfinalproject.ui.Activities.Lesson1refrence
+import com.example.boosterfinalproject.R
+import com.example.boosterfinalproject.ui.Activities.SupportSystem
+import com.example.boosterfinalproject.models.Lesson
 import kotlinx.android.synthetic.main.cardvieww.view.*
 
 class LessonAdapter(val context: Context, val lessonList: ArrayList<Lesson>) :

@@ -1,4 +1,4 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.models
 
 import android.media.Image
 import android.widget.ImageView

@@ -1,13 +1,10 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.ui.Activities
 
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.boosterfinalproject.R
 import kotlinx.android.synthetic.main.activity_fragment_holder.*
 
 

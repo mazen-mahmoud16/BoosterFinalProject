@@ -1,17 +1,17 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.adapters
 
 import android.graphics.Color
-import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.item.*
+import com.example.boosterfinalproject.R
+import com.example.boosterfinalproject.models.Person
 import kotlinx.android.synthetic.main.item.view.*
 import kotlinx.android.synthetic.main.item.view.item
 
-class Adapter(val Personlist:ArrayList<Person>) : RecyclerView.Adapter<Adapter.viewHolder>() {
+class PersonAdapter(val Personlist:ArrayList<Person>) : RecyclerView.Adapter<PersonAdapter.viewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
         val layoutinflater=LayoutInflater.from(parent.context).inflate(R.layout.item,parent,false)

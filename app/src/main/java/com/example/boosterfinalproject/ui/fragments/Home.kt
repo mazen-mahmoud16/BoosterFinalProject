@@ -1,4 +1,4 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
-import androidx.core.view.marginTop
-import androidx.navigation.fragment.findNavController
+import com.example.boosterfinalproject.ui.Activities.AwarenessRoom
+import com.example.boosterfinalproject.ui.Activities.Welcome
+import com.example.boosterfinalproject.R
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -27,9 +27,10 @@ class Home : Fragment() {
         super.onActivityCreated(savedInstanceState)
         //var visibility = arguments?.getString("visibility")?:"aa"
         //Log.e("home",visibility)
-        checkVisibility(MainActivity.data)
+        checkVisibility(Welcome.data)
         selfAwareness.setOnClickListener(){
-            activity?.startActivity(Intent(requireContext(),AwarenessRoom::class.java))
+            activity?.startActivity(Intent(requireContext(),
+                AwarenessRoom::class.java))
         }
     }
     fun checkVisibility( visibility:String){

@@ -1,14 +1,13 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.ui.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import kotlinx.android.synthetic.main.activity_awareness_room.*
+import com.example.boosterfinalproject.R
+import com.example.boosterfinalproject.ui.fragments.Home
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
 
-class MainActivity : AppCompatActivity() {
+class Welcome : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,20 +16,22 @@ class MainActivity : AppCompatActivity() {
 
 
         start.setOnClickListener {
-            val intent:Intent = Intent(this,FragmentHolder::class.java)
+            val intent:Intent = Intent(this,
+                FragmentHolder::class.java)
             val bundle = Bundle()
             bundle.putString("visibility", "Invisible")
             val myFrag = Home()
-            data="Invisible"
+            data ="Invisible"
             myFrag.arguments = bundle
             //intent.putExtra("home","homeScrolled")
             startActivity(intent)
         }
         login.setOnClickListener {
-            val intent:Intent = Intent(this,FragmentHolder::class.java)
+            val intent:Intent = Intent(this,
+                FragmentHolder::class.java)
             val bundle = Bundle()
             bundle.putString("visibility", "visible")
-            data="visible"
+            data ="visible"
             val myFrag = Home()
             myFrag.arguments = bundle
             //intent.putExtra("home","home")

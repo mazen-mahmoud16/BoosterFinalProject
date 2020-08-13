@@ -1,11 +1,10 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.ui.Activities
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_awareness_room.*
-import kotlinx.android.synthetic.main.activity_lesson1refrence.*
+import com.example.boosterfinalproject.R
 import kotlinx.android.synthetic.main.activity_support_system.*
 import kotlinx.android.synthetic.main.activity_support_system.lesson
 

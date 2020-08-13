@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingTop="30dp"
     android:background="#add8e6"
-    tools:context=".MainActivity">
+    tools:context=".ui.Activities.Welcome">
 
 
     <ImageView

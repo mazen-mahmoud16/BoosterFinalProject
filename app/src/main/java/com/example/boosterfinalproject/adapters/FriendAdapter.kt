@@ -1,4 +1,4 @@
-package com.example.boosterfinalproject
+package com.example.boosterfinalproject.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
-import com.example.boosterfinalproject.repositories.TokenRepository
+import com.example.boosterfinalproject.R
+import com.example.boosterfinalproject.models.FriendToken
 import kotlinx.android.synthetic.main.activity_friend_recyclerview.view.*
 
 class FriendAdapter(private val context: Fragment, private val tokenList: List<FriendToken>) :
