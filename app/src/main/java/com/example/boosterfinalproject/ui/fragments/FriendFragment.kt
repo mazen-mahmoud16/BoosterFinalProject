@@ -19,13 +19,14 @@ class FriendFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
 
+        //To fill the recyclerview with the data(list) coming from the repository
         viewModel.getTokenData().observe(viewLifecycleOwner, Observer {
             recyclerView.adapter =
                 FriendAdapter(this, it)
         })
 
+        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_friend, container, false)
     }
 

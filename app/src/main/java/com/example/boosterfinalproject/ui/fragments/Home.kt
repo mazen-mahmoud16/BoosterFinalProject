@@ -25,14 +25,19 @@ class Home : Fragment() {
     }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        //var visibility = arguments?.getString("visibility")?:"aa"
-        //Log.e("home",visibility)
         checkVisibility(Welcome.data)
         selfAwareness.setOnClickListener(){
             activity?.startActivity(Intent(requireContext(),
                 AwarenessRoom::class.java))
         }
     }
+
+
+    /**
+     *This function is used to check whether the user presses get started to make the profile
+     * tab invisible
+     * or the user presses login and his/her profile tab will be visible
+     **/
     fun checkVisibility( visibility:String){
         if(visibility=="visible") {
             totaltext.visibility = View.VISIBLE
@@ -45,8 +50,6 @@ class Home : Fragment() {
             personPercentage.visibility = View.VISIBLE
             personImage.visibility = View.VISIBLE
         }
-        else Log.e("home",visibility)
-
     }
 
 }

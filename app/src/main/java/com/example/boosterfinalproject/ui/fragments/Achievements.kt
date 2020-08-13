@@ -22,6 +22,7 @@ class Achievements : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        //To fill the recyclerview with the data(list) coming from the repository
         viewModel.getPersonData().observe(viewLifecycleOwner, Observer {
             main.adapter=PersonAdapter(it)
         })

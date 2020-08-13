@@ -21,6 +21,7 @@ class AwarenessRoom : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_awareness_room)
 
+        //To fill the recyclerview with the data(list) coming from the repository
         viewModel2.getLessonData().observe(this, Observer {
             main.adapter=LessonAdapter(this,it)
         })

@@ -18,28 +18,23 @@ class Welcome : AppCompatActivity() {
         start.setOnClickListener {
             val intent:Intent = Intent(this,
                 FragmentHolder::class.java)
-            val bundle = Bundle()
-            bundle.putString("visibility", "Invisible")
-            val myFrag = Home()
             data ="Invisible"
-            myFrag.arguments = bundle
-            //intent.putExtra("home","homeScrolled")
             startActivity(intent)
         }
         login.setOnClickListener {
             val intent:Intent = Intent(this,
                 FragmentHolder::class.java)
-            val bundle = Bundle()
-            bundle.putString("visibility", "visible")
             data ="visible"
-            val myFrag = Home()
-            myFrag.arguments = bundle
-            //intent.putExtra("home","home")
             startActivity(intent)
         }
 
 
     }
+    /**
+     *This variable is used to check whether the user presses get started to make the profile
+     * tab invisible
+     * or the user presses login and his/her profile tab will be visible
+     **/
     companion object {
      var data = ""
  }

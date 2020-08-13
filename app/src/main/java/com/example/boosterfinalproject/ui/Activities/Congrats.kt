@@ -10,6 +10,8 @@ class Congrats : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_congrats)
+
+        //To start Awareness room activity
         claim.setOnClickListener(){
             val intent: Intent = Intent(this,
                 AwarenessRoom::class.java)
