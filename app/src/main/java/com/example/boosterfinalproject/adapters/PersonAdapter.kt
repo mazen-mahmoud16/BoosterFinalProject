@@ -24,21 +24,7 @@ class PersonAdapter(val Personlist:List<Person>) : RecyclerView.Adapter<PersonAd
     }
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
-        val person= Personlist.get(position)
-        holder.personName.text=person.name
-        holder.Score.text="${person.Score} Points".toString()
-        holder.Rank.text=person.Rank.toString()
-        holder.image.setImageResource(person.Image)
-        if(person.Rank==1){
-            holder.itemm.setBackgroundColor(Color.parseColor("#22d0c4"))
-            holder.Rank.setBackgroundResource(R.drawable.first_rank)
-            holder.Rank.setTextColor(Color.parseColor("#1f314a"))
-        }
-        if(person.Rank==2||person.Rank==3){
-            holder.Rank.setBackgroundResource(R.drawable.second_rank)
-            holder.Rank.setTextColor(Color.parseColor("#22d0c4"))
-
-        }
+        holder.bindData(Personlist[position])
     }
 
     inner class viewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
@@ -47,5 +33,24 @@ class PersonAdapter(val Personlist:List<Person>) : RecyclerView.Adapter<PersonAd
         val Rank: TextView =itemView.textView14
         val itemm=itemView.item
         val image=itemView.imageView9
+
+        fun bindData(personToken:Person){
+            personName.text=personToken.name
+            Score.text="${personToken.Score} Points"
+            Rank.text=personToken.Rank.toString()
+            image.setImageResource(personToken.Image)
+
+            //Set color of the rank 1 player
+            if(personToken.Rank==1){
+                itemm.setBackgroundColor(Color.parseColor("#22d0c4"))
+                Rank.setBackgroundResource(R.drawable.first_rank)
+                Rank.setTextColor(Color.parseColor("#1f314a"))
+            }
+            //Set color of the rank 2 and 3 players
+            if(personToken.Rank==2||personToken.Rank==3){
+                Rank.setBackgroundResource(R.drawable.second_rank)
+                Rank.setTextColor(Color.parseColor("#22d0c4"))
+            }
+        }
     }
 }

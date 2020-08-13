@@ -28,33 +28,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
     }
 
     override fun onBindViewHolder(holder: DataItemViewHolder, position: Int) {
-        val dataa: Lesson = lessonList.get(position)
-
-
-        holder.title.setText(dataa.LessonTitle)
-        holder.lessonNo.setText(dataa.LessonNo)
-        holder.description.setText(dataa.LessonDesc)
-        holder.buttonn.setText(dataa.ButtonLesson)
-        if (dataa.ButtonLesson == "Start Quiz") {
-            holder.start.setOnClickListener() {
-                val intent = Intent(context, SupportSystem::class.java)
-                intent.putExtra("lesson",holder.lessonNo.text.toString())
-                context.startActivity(intent)
-            }
-        } else if (dataa.ButtonLesson == "Claim your gift!") {
-            holder.start.setOnClickListener() {
-                val intent = Intent(context, Congrats::class.java)
-                context.startActivity(intent)
-            }
-        } else {
-            holder.start.setOnClickListener() {
-                val intent = Intent(context, Lesson1refrence::class.java)
-                intent.putExtra("lesson",holder.lessonNo.text.toString())
-                context.startActivity(intent)
-            }
-        }
-
-
+        holder.bindData(lessonList[position])
     }
 
 
@@ -65,6 +39,36 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
         val description = itemView.desc
         val buttonn = itemView.start
         val start = itemView.start
+
+        fun bindData(lessonToken:Lesson){
+            title.setText(lessonToken.LessonTitle)
+            lessonNo.setText(lessonToken.LessonNo)
+            description.setText(lessonToken.LessonDesc)
+            buttonn.setText(lessonToken.ButtonLesson)
+
+            //To open the lesson Quiz
+            if (lessonToken.ButtonLesson == "Start Quiz") {
+                start.setOnClickListener() {
+                    val intent = Intent(context, SupportSystem::class.java)
+                    intent.putExtra("lesson",lessonNo.text.toString())
+                    context.startActivity(intent)
+                }
+
+                //To open the reward for the user
+            } else if (lessonToken.ButtonLesson == "Claim your gift!") {
+                start.setOnClickListener() {
+                    val intent = Intent(context, Congrats::class.java)
+                    context.startActivity(intent)
+                }
+            } else {
+                //To open the lesson video
+                start.setOnClickListener() {
+                    val intent = Intent(context, Lesson1refrence::class.java)
+                    intent.putExtra("lesson",lessonNo.text.toString())
+                    context.startActivity(intent)
+                }
+            }
+        }
     }
 
 
