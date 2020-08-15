@@ -31,40 +31,6 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
     override fun onBindViewHolder(holder: DataItemViewHolder, position: Int) {
         holder.bindData(lessonList[position])
 
-        //if (lessonList[position].lessonOpen) {
-            holder.buttonn.setBackgroundResource(R.drawable.textback)
-            holder.buttonn.text = "Start"
-
-            holder.start.setOnClickListener() {
-               /* if (position < (lessonList.size - 1)) {
-                    lessonList[position + 1].lessonOpen = true
-                    lessonList[position + 1].LessonType = "Start"
-                    holder.buttonn.setBackgroundResource(R.drawable.textback)
-                }*/
-
-                //To open the lesson Quiz
-                if (lessonList[position].LessonType == "Quiz") {
-                    val intent = Intent(context, SupportSystem::class.java)
-                    intent.putExtra("lesson", lessonList[position].LessonNo)
-                    context.startActivity(intent)
-                }
-
-                //To open the reward for the user
-                else if (lessonList[position].LessonType == "Claim your gift!") {
-                    holder.start.setOnClickListener() {
-                        val intent = Intent(context, Congrats::class.java)
-                        context.startActivity(intent)
-                    }
-                }
-
-                //To open the lesson video
-                else {
-                    val intent = Intent(context, Lesson1refrence::class.java)
-                    intent.putExtra("lesson", lessonList[position].LessonNo)
-                    context.startActivity(intent)
-                }
-            }
-        //}
     }
 
 
@@ -81,6 +47,43 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
             lessonNo.setText(lessonToken.LessonNo)
             description.setText(lessonToken.LessonDesc)
 
+            //if (lessonToken.lessonOpen) {
+            buttonn.setBackgroundResource(R.drawable.textback)
+            if (lessonToken.LessonType == "Quiz")
+                buttonn.text = "Start Quiz"
+            else if(lessonToken.LessonType =="Claim your gift!")
+                buttonn.text = "Claim your gift!"
+            else buttonn.text = "Start"
+
+            start.setOnClickListener() {
+                /* if (position < (lessonList.size - 1)) {
+                     lessonList[position + 1].lessonOpen = true
+                     lessonList[position + 1].LessonType = "Start"
+                     buttonn.setBackgroundResource(R.drawable.textback)
+                 }*/
+
+                //To open the lesson Quiz
+                if (lessonToken.LessonType == "Quiz") {
+                    val intent = Intent(context, SupportSystem::class.java)
+                    intent.putExtra("lesson", lessonToken.LessonNo)
+                    context.startActivity(intent)
+                }
+
+                //To open the reward for the user
+                else if (lessonToken.LessonType == "Claim your gift!") {
+                        val intent = Intent(context, Congrats::class.java)
+                        context.startActivity(intent)
+
+                }
+
+                //To open the lesson video
+                else {
+                    val intent = Intent(context, Lesson1refrence::class.java)
+                    intent.putExtra("lesson", lessonToken.LessonNo)
+                    context.startActivity(intent)
+                }
+            }
+            //}
         }
 
     }

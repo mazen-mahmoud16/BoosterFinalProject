@@ -22,9 +22,9 @@ class AwarenessRoom : AppCompatActivity() {
         setContentView(R.layout.activity_awareness_room)
 
         //To fill the recyclerview with the data(list) coming from the repository
-        /*viewModel2.getLessonDataSupport().observe(this, Observer {
+        viewModel2.getLessonDataSupport().observe(this, Observer {
             main.adapter=LessonAdapter(this,it)
-        })*/
+        })
 
 
 
