@@ -31,16 +31,16 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
     override fun onBindViewHolder(holder: DataItemViewHolder, position: Int) {
         holder.bindData(lessonList[position])
 
-        if (lessonList[position].lessonOpen) {
+        //if (lessonList[position].lessonOpen) {
             holder.buttonn.setBackgroundResource(R.drawable.textback)
             holder.buttonn.text = "Start"
 
             holder.start.setOnClickListener() {
-                if (position < (lessonList.size - 1)) {
+               /* if (position < (lessonList.size - 1)) {
                     lessonList[position + 1].lessonOpen = true
                     lessonList[position + 1].LessonType = "Start"
                     holder.buttonn.setBackgroundResource(R.drawable.textback)
-                }
+                }*/
 
                 //To open the lesson Quiz
                 if (lessonList[position].LessonType == "Quiz") {
@@ -64,7 +64,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
                     context.startActivity(intent)
                 }
             }
-        }
+        //}
     }
 
 
