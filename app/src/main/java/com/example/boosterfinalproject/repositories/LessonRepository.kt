@@ -14,7 +14,15 @@ object LessonRepository {
                 "Lesson 1",
                 "Building an integral support system,\n" +
                         "Pushes you to grow, strech more, mainly asks why things wont work, and bullet proofs ideas",
-                "Start"
+                "Lesson", true
+            )
+        )
+        lessonList.add(
+            Lesson(
+                "Support System",
+                "Lesson 1 Quiz",
+                "Good Luck",
+                "Quiz"
             )
         )
         lessonList.add(
@@ -23,7 +31,15 @@ object LessonRepository {
                 "Lesson 2",
                 "These generic visual supports templates " +
                         "will be a gamechanger for you and your students this comprehensive set is perfect for you!",
-                "Locked"
+                "Lesson"
+            )
+        )
+        lessonList.add(
+            Lesson(
+                "Support System",
+                "Lesson 2 Quiz",
+                "Good Luck",
+                "Quiz"
             )
         )
         lessonList.add(
@@ -32,7 +48,15 @@ object LessonRepository {
                 "Lesson 3",
                 "If you are looking for a fun and " +
                         "innovative way to motivate your students to improve their handwriting, their skills and their abilities! ",
-                "Locked"
+                "Lesson"
+            )
+        )
+        lessonList.add(
+            Lesson(
+                "Support System",
+                "Lesson 3 Quiz",
+                "Good Luck",
+                "Quiz"
             )
         )
         lessonList.add(
@@ -41,7 +65,15 @@ object LessonRepository {
                 "Lesson 4",
                 "Understanding who you can count on is a key social and emotional " +
                         "skill we can teach early and reinforce through high school.",
-                "Locked"
+                "Lesson"
+            )
+        )
+        lessonList.add(
+            Lesson(
+                "Support System",
+                "Lesson 4 Quiz",
+                "Good Luck",
+                "Quiz"
             )
         )
         lessonList.add(
@@ -50,39 +82,7 @@ object LessonRepository {
                 "Lesson 5",
                 "These generic visual supports templates " +
                         "will be a gamechanger for you and your students this comprehensive set is perfect for you!",
-                "Locked"
-            )
-        )
-        lessonList.add(
-            Lesson(
-                "Support System",
-                "Lesson 1 Quiz",
-                "Good Luck",
-                "Start Quiz"
-            )
-        )
-        lessonList.add(
-            Lesson(
-                "Support System",
-                "Lesson 2 Quiz",
-                "Good Luck",
-                "Start Quiz"
-            )
-        )
-        lessonList.add(
-            Lesson(
-                "Support System",
-                "Lesson 3 Quiz",
-                "Good Luck",
-                "Start Quiz"
-            )
-        )
-        lessonList.add(
-            Lesson(
-                "Support System",
-                "Lesson 4 Quiz",
-                "Good Luck",
-                "Start Quiz"
+                "Lesson"
             )
         )
         lessonList.add(
@@ -90,7 +90,7 @@ object LessonRepository {
                 "Support System",
                 "Lesson 5 Quiz",
                 "Good Luck",
-                "Start Quiz"
+                "Quiz"
             )
         )
         lessonList.add(
