@@ -39,7 +39,6 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
         val title = itemView.system
         val lessonNo = itemView.lesson
         val description = itemView.desc
-        val buttonn = itemView.start
         val start = itemView.start
 
         fun bindData(lessonToken: Lesson) {
@@ -48,18 +47,18 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
             description.setText(lessonToken.LessonDesc)
 
             //if (lessonToken.lessonOpen) {
-            buttonn.setBackgroundResource(R.drawable.textback)
+            start.setBackgroundResource(R.drawable.textback)
             if (lessonToken.LessonType == "Quiz")
-                buttonn.text = "Start Quiz"
+                start.text = "Start Quiz"
             else if(lessonToken.LessonType =="Claim your gift!")
-                buttonn.text = "Claim your gift!"
-            else buttonn.text = "Start"
+                start.text = "Claim your gift!"
+            else start.text = "Start"
 
             start.setOnClickListener() {
                 /* if (position < (lessonList.size - 1)) {
                      lessonList[position + 1].lessonOpen = true
                      lessonList[position + 1].LessonType = "Start"
-                     buttonn.setBackgroundResource(R.drawable.textback)
+                     start.setBackgroundResource(R.drawable.textback)
                  }*/
 
                 //To open the lesson Quiz
