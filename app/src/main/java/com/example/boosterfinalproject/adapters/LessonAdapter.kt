@@ -36,6 +36,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
 
     //*********************************************************************************************
     inner class DataItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         val title = itemView.system
         val lessonNo = itemView.lesson
         val description = itemView.desc
@@ -46,7 +47,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
             lessonNo.setText(lessonToken.LessonNo)
             description.setText(lessonToken.LessonDesc)
 
-            //if (lessonToken.lessonOpen) {
+            if (lessonToken.lessonOpen) {
             start.setBackgroundResource(R.drawable.textback)
             if (lessonToken.LessonType == "Quiz")
                 start.text = "Start Quiz"
@@ -55,11 +56,11 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
             else start.text = "Start"
 
             start.setOnClickListener() {
-                /* if (position < (lessonList.size - 1)) {
+
                      lessonList[position + 1].lessonOpen = true
                      lessonList[position + 1].LessonType = "Start"
                      start.setBackgroundResource(R.drawable.textback)
-                 }*/
+
 
                 //To open the lesson Quiz
                 if (lessonToken.LessonType == "Quiz") {
@@ -82,7 +83,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
                     context.startActivity(intent)
                 }
             }
-            //}
+            }
         }
 
     }
