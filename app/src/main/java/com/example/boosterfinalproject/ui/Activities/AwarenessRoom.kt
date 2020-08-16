@@ -17,6 +17,14 @@ class AwarenessRoom : AppCompatActivity() {
 
     private val viewModel2: LessonViewModel by viewModels()
 
+    override fun onResume() {
+        super.onResume()
+        //To fill the recyclerview with the data(list) coming from the repository
+        viewModel2.getLessonDataSupport().observe(this, Observer {
+            main.adapter=LessonAdapter(this,it)
+        })
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_awareness_room)

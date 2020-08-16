@@ -18,6 +18,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
     RecyclerView.Adapter<LessonAdapter.DataItemViewHolder>() {
 
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataItemViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val DataItemView = layoutInflater.inflate(R.layout.cardvieww, parent, false)
@@ -56,11 +57,10 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
             else start.text = "Start"
 
             start.setOnClickListener() {
-
-                     lessonList[position + 1].lessonOpen = true
-                     lessonList[position + 1].LessonType = "Start"
-                     start.setBackgroundResource(R.drawable.textback)
-
+                if(position<10) {
+                    lessonList[position + 1].lessonOpen = true
+                    start.setBackgroundResource(R.drawable.textback)
+                }
 
                 //To open the lesson Quiz
                 if (lessonToken.LessonType == "Quiz") {
