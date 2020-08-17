@@ -11,8 +11,6 @@ import com.example.boosterfinalproject.viewmodels.LessonViewModel
 import kotlinx.android.synthetic.main.activity_awareness_room.*
 
 
-
-
 class AwarenessRoom : AppCompatActivity() {
 
     private val viewModel2: LessonViewModel by viewModels()
@@ -21,7 +19,7 @@ class AwarenessRoom : AppCompatActivity() {
         super.onResume()
         //To fill the recyclerview with the data(list) coming from the repository
         viewModel2.getLessonDataSupport().observe(this, Observer {
-            main.adapter=LessonAdapter(this,it)
+            main.adapter = LessonAdapter(this, it)
         })
     }
 
@@ -31,7 +29,7 @@ class AwarenessRoom : AppCompatActivity() {
 
         //To fill the recyclerview with the data(list) coming from the repository
         viewModel2.getLessonDataSupport().observe(this, Observer {
-            main.adapter=LessonAdapter(this,it)
+            main.adapter = LessonAdapter(this, it)
         })
 
 
@@ -39,30 +37,31 @@ class AwarenessRoom : AppCompatActivity() {
         core.setOnClickListener() {
             coreClicked()
             viewModel2.getLessonDataCore().observe(this, Observer {
-                main.adapter=LessonAdapter(this,it)
+                main.adapter = LessonAdapter(this, it)
             })
         }
         support.setOnClickListener() {
             supportClicked()
             viewModel2.getLessonDataSupport().observe(this, Observer {
-                main.adapter=LessonAdapter(this,it)
+                main.adapter = LessonAdapter(this, it)
             })
         }
         weak.setOnClickListener() {
             weakClicked()
             viewModel2.getLessonDataWeak().observe(this, Observer {
-                main.adapter=LessonAdapter(this,it)
+                main.adapter = LessonAdapter(this, it)
             })
         }
         goals.setOnClickListener() {
             goalsClicked()
             viewModel2.getLessonDataGoals().observe(this, Observer {
-                main.adapter=LessonAdapter(this,it)
+                main.adapter = LessonAdapter(this, it)
             })
         }
 
 
     }
+
     /**
      * These functions to highlight the button selected by the user and to unhighlight
      * any other button
@@ -77,7 +76,8 @@ class AwarenessRoom : AppCompatActivity() {
         goals.setBackground(getDrawable(R.drawable.backk))
         goals.setTextColor(Color.parseColor("#aa1f314a"))
     }
-    fun coreClicked(){
+
+    fun coreClicked() {
         core.setBackground(getDrawable(R.drawable.backrounded))
         core.setTextColor(Color.BLACK)
         support.setBackground(getDrawable(R.drawable.backk))
@@ -87,7 +87,8 @@ class AwarenessRoom : AppCompatActivity() {
         goals.setBackground(getDrawable(R.drawable.backk))
         goals.setTextColor(Color.parseColor("#aa1f314a"))
     }
-    fun weakClicked(){
+
+    fun weakClicked() {
         weak.setBackground(getDrawable(R.drawable.backrounded))
         weak.setTextColor(Color.BLACK)
         support.setBackground(getDrawable(R.drawable.backk))
@@ -97,7 +98,8 @@ class AwarenessRoom : AppCompatActivity() {
         goals.setBackground(getDrawable(R.drawable.backk))
         goals.setTextColor(Color.parseColor("#aa1f314a"))
     }
-    fun goalsClicked(){
+
+    fun goalsClicked() {
         goals.setBackground(getDrawable(R.drawable.backrounded))
         goals.setTextColor(Color.BLACK)
         support.setBackground(getDrawable(R.drawable.backk))

@@ -18,7 +18,6 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
     RecyclerView.Adapter<LessonAdapter.DataItemViewHolder>() {
 
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataItemViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val DataItemView = layoutInflater.inflate(R.layout.cardvieww, parent, false)
@@ -48,16 +47,8 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
             lessonNo.setText(lessonToken.LessonNo)
             description.setText(lessonToken.LessonDesc)
 
-            if (lessonToken.lessonOpen) {
-            start.setBackgroundResource(R.drawable.textback)
-            if (lessonToken.LessonType == "Quiz")
-                start.text = "Start Quiz"
-            else if(lessonToken.LessonType =="Claim your gift!")
-                start.text = "Claim your gift!"
-            else start.text = "Start"
-
             start.setOnClickListener() {
-                if(position<10) {
+                if (position < 10) {
                     lessonList[position + 1].lessonOpen = true
                     start.setBackgroundResource(R.drawable.textback)
                 }
@@ -71,8 +62,8 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
 
                 //To open the reward for the user
                 else if (lessonToken.LessonType == "Claim your gift!") {
-                        val intent = Intent(context, Congrats::class.java)
-                        context.startActivity(intent)
+                    val intent = Intent(context, Congrats::class.java)
+                    context.startActivity(intent)
 
                 }
 
@@ -83,6 +74,21 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
                     context.startActivity(intent)
                 }
             }
+
+            if (lessonToken.lessonOpen) {
+                start.setBackgroundResource(R.drawable.textback)
+                start.isEnabled = true
+                if (lessonToken.LessonType == "Quiz")
+                    start.text = "Start Quiz"
+                else if (lessonToken.LessonType == "Claim your gift!")
+                    start.text = "Claim your gift!"
+                else start.text = "Start"
+
+
+            } else {
+                start.setBackgroundResource(R.drawable.textbackkk)
+                start.text = "Locked"
+                start.isEnabled = false
             }
         }
 
