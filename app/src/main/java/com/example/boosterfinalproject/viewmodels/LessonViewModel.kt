@@ -18,4 +18,10 @@ class LessonViewModel : ViewModel(){
     fun getLessonDataGoals(): LiveData<List<Lesson>> {
         return LessonRepository.getLessonListGoals()
     }
+    //This static variable to decide which video on youtube the user will see
+    companion object {
+        var videoID="za2oNpHjYL8"
+    }
+
+
 }

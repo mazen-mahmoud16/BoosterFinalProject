@@ -9,6 +9,8 @@ object LessonRepository {
     private val lessonList2: MutableList<Lesson> = mutableListOf()
     private val lessonList3: MutableList<Lesson> = mutableListOf()
     private val lessonList4: MutableList<Lesson> = mutableListOf()
+
+
     fun getLessonList(): LiveData<List<Lesson>> {
         val lessonLiveData: MutableLiveData<List<Lesson>> = MutableLiveData()
         if(lessonList.size==0) {
@@ -403,6 +405,7 @@ object LessonRepository {
         }
         lessonLiveData.postValue(lessonList4)
         return lessonLiveData
-
     }
+
+
 }
