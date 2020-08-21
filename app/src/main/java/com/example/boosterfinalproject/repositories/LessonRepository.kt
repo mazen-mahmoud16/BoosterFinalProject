@@ -407,5 +407,24 @@ object LessonRepository {
         return lessonLiveData
     }
 
-
+    //These 5 functions contains the description of the 5 videos
+    fun getlesson1Intro(): String{
+        return "This lesson helps you to understand what is the meaning of recyclerview, which many developers are afraid of" +
+                "and do not understand it correctly which makes it so complicated for the developers."
+    }
+    fun getlesson2Intro(): String{
+        return "This lesson we will try to implement the recyclerview in arabic. It is recommended if you do not watch the first video carefully" +
+                ", to open it and watch it again, as this lesson depends on the first lesson."
+    }
+    fun getlesson3Intro(): String{
+        return "You should learn in this lesson how to make a file template. This lesson is in Arabic."
+    }
+    fun getlesson4Intro(): String{
+        return "This lesson we will try to make you understand retrofit, as it is so important for the developers nowadays and " +
+                "most of the jobs requires to implement retrofit to get data from internet."
+    }
+    fun getlesson5Intro(): String{
+        return "In this lesson we will try to implement the retofit discussed in lesson 4 in android studio " +
+        "with ots interfaces. It is recommended to understand lesson 4 properly before watching this video."
+    }
 }

@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_lesson1refrence.lesson
 import kotlinx.android.synthetic.main.activity_support_system.*
 
 class Lesson1refrence : YouTubeBaseActivity() {
-    
+
 
     private val youTubeApiKey="AIzaSyDSBeOuBTMocAONqmU00nF9kgCB94g0LYo"
 
@@ -82,8 +82,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         fourth.setBackground(getDrawable(R.drawable.textbackkk))
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
         LessonViewModel.videoID="za2oNpHjYL8"
-        intro.text="This lesson helps you to understand what is the meaning of recyclerview, which many developers are afraid of" +
-                "and do not understand it correctly which makes it so complicated for the developers."
+        intro.text=LessonViewModel.getlesson1Text()
     }
     fun secondLesson(){
         second.setBackground(getDrawable(R.drawable.textback))
@@ -92,8 +91,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         fourth.setBackground(getDrawable(R.drawable.textbackkk))
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
         LessonViewModel.videoID="eLVd0kuLeoI"
-        intro.text="This lesson we will try to implement the recyclerview in arabic. It is recommended if you do not watch the first video carefully" +
-                ", to open it and watch it again, as this lesson depends on the first lesson."
+        intro.text=LessonViewModel.getlesson2Text()
     }
     fun thirdLesson(){
         third.setBackground(getDrawable(R.drawable.textback))
@@ -102,7 +100,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         fourth.setBackground(getDrawable(R.drawable.textbackkk))
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
         LessonViewModel.videoID="1pu7IDrUq"
-        intro.text="You should learn in this lesson how to make a file template. This lesson is in Arabic."
+        intro.text=LessonViewModel.getlesson3Text()
     }
     fun fourthLesson(){
         fourth.setBackground(getDrawable(R.drawable.textback))
@@ -111,8 +109,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         second.setBackground(getDrawable(R.drawable.textback))
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
         LessonViewModel.videoID="DeUhC24aGmQ"
-        intro.text="This lesson we will try to make you understand retrofit, as it is so important for the developers nowadays and " +
-                "most of the jobs requires to implement retrofit to get data from internet."
+        intro.text=LessonViewModel.getlesson4Text()
     }
     fun fifthLesson(){
         fifth.setBackground(getDrawable(R.drawable.textback))
@@ -121,7 +118,6 @@ class Lesson1refrence : YouTubeBaseActivity() {
         fourth.setBackground(getDrawable(R.drawable.textback))
         second.setBackground(getDrawable(R.drawable.textback))
         LessonViewModel.videoID="jmuGZ6Rc8to"
-        intro.text="In this lesson we will try to implement the retofit discussed in lesson 4 in android studio " +
-                "with ots interfaces. It is recommended to understand lesson 4 properly before watching this video."
+        intro.text=LessonViewModel.getlesson5Text()
     }
 }
