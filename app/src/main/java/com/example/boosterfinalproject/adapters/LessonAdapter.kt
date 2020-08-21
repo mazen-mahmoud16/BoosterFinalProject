@@ -57,6 +57,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
                 if (lessonToken.LessonType == "Quiz") {
                     val intent = Intent(context, SupportSystem::class.java)
                     intent.putExtra("lesson", lessonToken.LessonNo)
+                    intent.putExtra("lessonName", lessonToken.LessonTitle)
                     context.startActivity(intent)
                 }
 
@@ -71,6 +72,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
                 else {
                     val intent = Intent(context, Lesson1refrence::class.java)
                     intent.putExtra("lesson", lessonToken.LessonNo)
+                    intent.putExtra("lessonName", lessonToken.LessonTitle)
                     context.startActivity(intent)
                 }
             }

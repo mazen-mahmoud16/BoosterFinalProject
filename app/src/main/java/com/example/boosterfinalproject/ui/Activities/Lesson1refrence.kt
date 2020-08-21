@@ -26,10 +26,15 @@ class Lesson1refrence : YouTubeBaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lesson1refrence)
 
+        support2.text = intent.getStringExtra("lessonName")
+
         initUI()
 
         //This variable contains the lesson number
         val lessonNumber:String=intent.getStringExtra("lesson")!!
+
+
+
         lesson.text=lessonNumber+" Reference"
         if(lessonNumber=="Lesson 1"){
             firstLesson()

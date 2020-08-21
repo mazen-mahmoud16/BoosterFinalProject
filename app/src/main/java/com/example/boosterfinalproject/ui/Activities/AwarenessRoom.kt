@@ -18,9 +18,7 @@ class AwarenessRoom : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         //To fill the recyclerview with the data(list) coming from the repository
-        viewModel2.getLessonDataSupport().observe(this, Observer {
-            main.adapter = LessonAdapter(this, it)
-        })
+        supportClicked()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,31 +30,17 @@ class AwarenessRoom : AppCompatActivity() {
             main.adapter = LessonAdapter(this, it)
         })
 
-
-
         core.setOnClickListener() {
             coreClicked()
-            viewModel2.getLessonDataCore().observe(this, Observer {
-                main.adapter = LessonAdapter(this, it)
-            })
         }
         support.setOnClickListener() {
             supportClicked()
-            viewModel2.getLessonDataSupport().observe(this, Observer {
-                main.adapter = LessonAdapter(this, it)
-            })
         }
         weak.setOnClickListener() {
             weakClicked()
-            viewModel2.getLessonDataWeak().observe(this, Observer {
-                main.adapter = LessonAdapter(this, it)
-            })
         }
         goals.setOnClickListener() {
             goalsClicked()
-            viewModel2.getLessonDataGoals().observe(this, Observer {
-                main.adapter = LessonAdapter(this, it)
-            })
         }
 
 
@@ -75,6 +59,9 @@ class AwarenessRoom : AppCompatActivity() {
         weak.setTextColor(Color.parseColor("#aa1f314a"))
         goals.setBackground(getDrawable(R.drawable.backk))
         goals.setTextColor(Color.parseColor("#aa1f314a"))
+        viewModel2.getLessonDataSupport().observe(this, Observer {
+            main.adapter = LessonAdapter(this, it)
+        })
     }
 
     fun coreClicked() {
@@ -86,6 +73,9 @@ class AwarenessRoom : AppCompatActivity() {
         weak.setTextColor(Color.parseColor("#aa1f314a"))
         goals.setBackground(getDrawable(R.drawable.backk))
         goals.setTextColor(Color.parseColor("#aa1f314a"))
+        viewModel2.getLessonDataCore().observe(this, Observer {
+            main.adapter = LessonAdapter(this, it)
+        })
     }
 
     fun weakClicked() {
@@ -97,6 +87,9 @@ class AwarenessRoom : AppCompatActivity() {
         core.setTextColor(Color.parseColor("#aa1f314a"))
         goals.setBackground(getDrawable(R.drawable.backk))
         goals.setTextColor(Color.parseColor("#aa1f314a"))
+        viewModel2.getLessonDataWeak().observe(this, Observer {
+            main.adapter = LessonAdapter(this, it)
+        })
     }
 
     fun goalsClicked() {
@@ -108,6 +101,9 @@ class AwarenessRoom : AppCompatActivity() {
         weak.setTextColor(Color.parseColor("#aa1f314a"))
         core.setBackground(getDrawable(R.drawable.backk))
         core.setTextColor(Color.parseColor("#aa1f314a"))
+        viewModel2.getLessonDataGoals().observe(this, Observer {
+            main.adapter = LessonAdapter(this, it)
+        })
     }
 }
 

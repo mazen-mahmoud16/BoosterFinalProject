@@ -19,6 +19,8 @@ class SupportSystem : AppCompatActivity() {
         //This variable has the lesson quiz number
         var lessonName:String=intent.getStringExtra("lesson")!!
 
+        support.text =intent.getStringExtra("lessonName")!!
+
         //To make the textview the lesson number
         lesson.text = lessonName
 

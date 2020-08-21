@@ -8,12 +8,14 @@
     android:background="@drawable/gradient_bg">
 
     <TextView
-        android:id="@+id/support"
+        android:id="@+id/support2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="96dp"
         android:text="Support Systems"
+        app:layout_constraintStart_toEndOf="@id/shape"
+        android:layout_marginStart="55dp"
         android:textColor="#1f314a"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -75,8 +77,8 @@
 
         android:layout_marginTop="5dp"
         android:background="@drawable/textback"
-        app:layout_constraintStart_toStartOf="@id/support"
-        app:layout_constraintTop_toBottomOf="@id/support" />
+        app:layout_constraintStart_toStartOf="@id/support2"
+        app:layout_constraintTop_toBottomOf="@id/support2" />
 
     <TextView
         android:id="@+id/second"
@@ -86,7 +88,7 @@
         android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/third"
         app:layout_constraintStart_toEndOf="@id/first"
-        app:layout_constraintTop_toBottomOf="@id/support" />
+        app:layout_constraintTop_toBottomOf="@id/support2" />
 
     <TextView
         android:id="@+id/third"
@@ -96,7 +98,7 @@
         android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/fourth"
         app:layout_constraintStart_toEndOf="@id/second"
-        app:layout_constraintTop_toBottomOf="@id/support" />
+        app:layout_constraintTop_toBottomOf="@id/support2" />
 
     <TextView
         android:id="@+id/fourth"
@@ -106,7 +108,7 @@
         android:background="@drawable/textback"
         app:layout_constraintEnd_toStartOf="@id/fifth"
         app:layout_constraintStart_toEndOf="@id/third"
-        app:layout_constraintTop_toBottomOf="@id/support" />
+        app:layout_constraintTop_toBottomOf="@id/support2" />
 
     <TextView
         android:id="@+id/fifth"
@@ -114,7 +116,7 @@
         android:layout_height="6dp"
         android:background="@drawable/textback"
         app:layout_constraintBottom_toBottomOf="@id/fourth"
-        app:layout_constraintEnd_toEndOf="@id/support"
+        app:layout_constraintEnd_toEndOf="@id/support2"
         app:layout_constraintTop_toTopOf="@id/fourth" />
 
 
