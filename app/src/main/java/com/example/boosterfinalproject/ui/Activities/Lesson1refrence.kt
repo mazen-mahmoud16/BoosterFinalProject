@@ -88,6 +88,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
         LessonViewModel.videoID="za2oNpHjYL8"
         intro.text=LessonViewModel.getlesson1Text()
+        shape2.setImageDrawable(getDrawable(R.drawable.book_shelf))
     }
     fun secondLesson(){
         second.setBackground(getDrawable(R.drawable.textback))
@@ -97,6 +98,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
         LessonViewModel.videoID="eLVd0kuLeoI"
         intro.text=LessonViewModel.getlesson2Text()
+        shape2.setImageDrawable(getDrawable(R.drawable.book_shelf2))
     }
     fun thirdLesson(){
         third.setBackground(getDrawable(R.drawable.textback))
@@ -106,6 +108,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
         LessonViewModel.videoID="1pu7IDrUq"
         intro.text=LessonViewModel.getlesson3Text()
+        shape2.setImageDrawable(getDrawable(R.drawable.book_shelf3))
     }
     fun fourthLesson(){
         fourth.setBackground(getDrawable(R.drawable.textback))
@@ -115,6 +118,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
         LessonViewModel.videoID="DeUhC24aGmQ"
         intro.text=LessonViewModel.getlesson4Text()
+        shape2.setImageDrawable(getDrawable(R.drawable.shape))
     }
     fun fifthLesson(){
         fifth.setBackground(getDrawable(R.drawable.textback))
@@ -124,5 +128,6 @@ class Lesson1refrence : YouTubeBaseActivity() {
         second.setBackground(getDrawable(R.drawable.textback))
         LessonViewModel.videoID="jmuGZ6Rc8to"
         intro.text=LessonViewModel.getlesson5Text()
+        shape2.setImageDrawable(getDrawable(R.drawable.shape2))
     }
 }

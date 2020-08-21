@@ -5,13 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.boosterfinalproject.R
+import kotlinx.android.synthetic.main.activity_lesson1refrence.*
 import kotlinx.android.synthetic.main.activity_support_system.*
 import kotlinx.android.synthetic.main.activity_support_system.lesson
 
 class SupportSystem : AppCompatActivity() {
 
     //this variable is used to check whether the user's answer is correct or not
-    var answer: Boolean = false
+    private var answer: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_support_system)
@@ -75,6 +76,7 @@ class SupportSystem : AppCompatActivity() {
         third2.setBackground(getDrawable(R.drawable.textbackkk))
         fourth2.setBackground(getDrawable(R.drawable.textbackkk))
         fifth2.setBackground(getDrawable(R.drawable.textbackkk))
+        shape.setImageDrawable(getDrawable(R.drawable.book_shelf))
     }
     fun secondLesson(){
         second2.setBackground(getDrawable(R.drawable.textback))
@@ -82,6 +84,7 @@ class SupportSystem : AppCompatActivity() {
         third2.setBackground(getDrawable(R.drawable.textbackkk))
         fourth2.setBackground(getDrawable(R.drawable.textbackkk))
         fifth2.setBackground(getDrawable(R.drawable.textbackkk))
+        shape.setImageDrawable(getDrawable(R.drawable.book_shelf2))
     }
     fun thirdLesson(){
         third2.setBackground(getDrawable(R.drawable.textback))
@@ -89,6 +92,7 @@ class SupportSystem : AppCompatActivity() {
         second2.setBackground(getDrawable(R.drawable.textback))
         fourth2.setBackground(getDrawable(R.drawable.textbackkk))
         fifth2.setBackground(getDrawable(R.drawable.textbackkk))
+        shape.setImageDrawable(getDrawable(R.drawable.book_shelf3))
     }
     fun fourthLesson(){
         fourth2.setBackground(getDrawable(R.drawable.textback))
@@ -96,6 +100,7 @@ class SupportSystem : AppCompatActivity() {
         third2.setBackground(getDrawable(R.drawable.textback))
         second2.setBackground(getDrawable(R.drawable.textback))
         fifth2.setBackground(getDrawable(R.drawable.textbackkk))
+        shape.setImageDrawable(getDrawable(R.drawable.shape))
     }
     fun fifthLesson(){
         fifth2.setBackground(getDrawable(R.drawable.textback))
@@ -103,6 +108,7 @@ class SupportSystem : AppCompatActivity() {
         third2.setBackground(getDrawable(R.drawable.textback))
         fourth2.setBackground(getDrawable(R.drawable.textback))
         second2.setBackground(getDrawable(R.drawable.textback))
+        shape.setImageDrawable(getDrawable(R.drawable.shape2))
     }
     //***************************************************************************************
     /**

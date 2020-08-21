@@ -409,7 +409,7 @@ object LessonRepository {
 
     //These 5 functions contains the description of the 5 videos
     fun getlesson1Intro(): String{
-        return "This lesson helps you to understand what is the meaning of recyclerview, which many developers are afraid of" +
+        return "This lesson helps you to understand what is the meaning of recyclerview, which many developers are afraid of " +
                 "and do not understand it correctly which makes it so complicated for the developers."
     }
     fun getlesson2Intro(): String{
