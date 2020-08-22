@@ -38,15 +38,19 @@ class Lesson1refrence : YouTubeBaseActivity() {
         lesson.text=lessonNumber+" Reference"
         if(lessonNumber=="Lesson 1"){
             firstLesson()
+            check.visibility=View.INVISIBLE
         }
         if(lessonNumber=="Lesson 2"){
             secondLesson()
+            check.visibility=View.INVISIBLE
         }
         if(lessonNumber=="Lesson 3"){
             thirdLesson()
+            check.visibility=View.INVISIBLE
         }
         if(lessonNumber=="Lesson 4"){
             fourthLesson()
+            check.visibility=View.INVISIBLE
         }
         if(lessonNumber=="Lesson 5"){
             fifthLesson()
@@ -106,7 +110,7 @@ class Lesson1refrence : YouTubeBaseActivity() {
         second.setBackground(getDrawable(R.drawable.textback))
         fourth.setBackground(getDrawable(R.drawable.textbackkk))
         fifth.setBackground(getDrawable(R.drawable.textbackkk))
-        LessonViewModel.videoID="1pu7IDrUq"
+        LessonViewModel.videoID="lMcznhiHdJE"
         intro.text=LessonViewModel.getlesson3Text()
         shape2.setImageDrawable(getDrawable(R.drawable.book_shelf3))
     }

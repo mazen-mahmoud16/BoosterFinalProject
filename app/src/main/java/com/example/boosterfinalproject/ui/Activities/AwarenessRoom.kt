@@ -1,7 +1,9 @@
 package com.example.boosterfinalproject.ui.Activities
 
 import android.graphics.Color
+import android.os.Build
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -9,6 +11,7 @@ import com.example.boosterfinalproject.R
 import com.example.boosterfinalproject.adapters.LessonAdapter
 import com.example.boosterfinalproject.viewmodels.LessonViewModel
 import kotlinx.android.synthetic.main.activity_awareness_room.*
+import kotlinx.android.synthetic.main.activity_lesson1refrence.*
 
 
 class AwarenessRoom : AppCompatActivity() {
@@ -18,17 +21,56 @@ class AwarenessRoom : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         //To fill the recyclerview with the data(list) coming from the repository
-        supportClicked()
+        if(goals.isEnabled==true)
+            goalsClicked()
+        else if(weak.isEnabled==true)
+        weakClicked()
+        else if(core.isEnabled==true)
+            coreClicked()
+        else supportClicked()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_awareness_room)
 
+        core.isEnabled = false
+        weak.isEnabled = false
+        goals.isEnabled = false
+
+
         //To fill the recyclerview with the data(list) coming from the repository
         viewModel2.getLessonDataSupport().observe(this, Observer {
             main.adapter = LessonAdapter(this, it)
         })
+
+        //These conditions are implemented to open the onclick listener for the other lessons
+        //only when the 5 lessons before are finished
+        if (intent.getStringExtra("checked") == "Support System") {
+            book.setImageDrawable(getDrawable(R.drawable.shape2))
+            checkMark.visibility = View.VISIBLE
+            core.isEnabled = true
+        }
+         if (intent.getStringExtra("checked") == "Core Value") {
+             core.isEnabled = true
+             weak.isEnabled = true
+             book.setImageDrawable(getDrawable(R.drawable.shape2))
+             checkMark.visibility = View.VISIBLE
+         }
+        if (intent.getStringExtra("checked") == "Strength-Weakness") {
+            goals.isEnabled = true
+            core.isEnabled = true
+            weak.isEnabled = true
+            book.setImageDrawable(getDrawable(R.drawable.shape2))
+            checkMark.visibility = View.VISIBLE
+        }
+        if (intent.getStringExtra("checked") == "Goals and Aspiration") {
+            goals.isEnabled = true
+            core.isEnabled = true
+            weak.isEnabled = true
+            book.setImageDrawable(getDrawable(R.drawable.shape2))
+            checkMark.visibility = View.VISIBLE
+        }
 
         core.setOnClickListener() {
             coreClicked()
@@ -50,6 +92,7 @@ class AwarenessRoom : AppCompatActivity() {
      * These functions to highlight the button selected by the user and to unhighlight
      * any other button
      **/
+
     fun supportClicked() {
         support.setBackground(getDrawable(R.drawable.backrounded))
         support.setTextColor(Color.BLACK)

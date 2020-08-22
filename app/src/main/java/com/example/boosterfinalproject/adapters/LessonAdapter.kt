@@ -64,6 +64,7 @@ class LessonAdapter(val context: Context, val lessonList: List<Lesson>) :
                 //To open the reward for the user
                 else if (lessonToken.LessonType == "Claim your gift!") {
                     val intent = Intent(context, Congrats::class.java)
+                    intent.putExtra("lessonName", lessonToken.LessonTitle)
                     context.startActivity(intent)
 
                 }

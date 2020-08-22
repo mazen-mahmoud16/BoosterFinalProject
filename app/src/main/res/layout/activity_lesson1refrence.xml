@@ -9,11 +9,12 @@
 
     <TextView
         android:id="@+id/support2"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="96dp"
         android:text="Support Systems"
+        android:textAlignment="center"
         app:layout_constraintStart_toEndOf="@id/shape2"
         android:layout_marginStart="55dp"
         android:textColor="#1f314a"
@@ -61,18 +62,18 @@
 
     <ImageView
         android:id="@+id/check"
-        android:layout_width="55dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/lesson"
-        app:layout_constraintTop_toBottomOf="@+id/third"
-        app:srcCompat="@drawable/checked" />
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/lesson"
+        app:layout_constraintTop_toTopOf="@id/lesson"
+        app:layout_constraintBottom_toBottomOf="@id/lesson"
+        android:src="@drawable/checked"/>
 
     <TextView
         android:id="@+id/first"
-        android:layout_width="35dp"
+        android:layout_width="45dp"
         android:layout_height="6dp"
 
         android:layout_marginTop="5dp"
@@ -82,7 +83,7 @@
 
     <TextView
         android:id="@+id/second"
-        android:layout_width="35dp"
+        android:layout_width="45dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/textback"
@@ -92,7 +93,7 @@
 
     <TextView
         android:id="@+id/third"
-        android:layout_width="35dp"
+        android:layout_width="45dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/textback"
@@ -102,7 +103,7 @@
 
     <TextView
         android:id="@+id/fourth"
-        android:layout_width="35dp"
+        android:layout_width="45dp"
         android:layout_height="6dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/textback"
@@ -112,7 +113,7 @@
 
     <TextView
         android:id="@+id/fifth"
-        android:layout_width="35dp"
+        android:layout_width="45dp"
         android:layout_height="6dp"
         android:background="@drawable/textback"
         app:layout_constraintBottom_toBottomOf="@id/fourth"

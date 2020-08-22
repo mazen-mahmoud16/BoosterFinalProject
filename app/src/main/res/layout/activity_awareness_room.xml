@@ -126,11 +126,23 @@
         android:layout_width="74dp"
         android:layout_height="88dp"
 
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@id/support"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="@id/support"
         app:layout_constraintTop_toBottomOf="@id/two"
         app:srcCompat="@drawable/book_shelf" />
+
+    <ImageView
+        android:id="@+id/checkMark"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toEndOf="@id/book"
+        app:layout_constraintTop_toTopOf="@id/book"
+        app:layout_constraintBottom_toBottomOf="@id/book"
+        android:src="@drawable/checked"
+        android:visibility="gone"/>
+
 
     <ImageView
         android:id="@+id/infoo"

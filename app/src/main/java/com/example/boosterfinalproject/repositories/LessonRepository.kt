@@ -417,7 +417,7 @@ object LessonRepository {
                 ", to open it and watch it again, as this lesson depends on the first lesson."
     }
     fun getlesson3Intro(): String{
-        return "You should learn in this lesson how to make a file template. This lesson is in Arabic."
+        return "This lesson we will try to explain the rest API."
     }
     fun getlesson4Intro(): String{
         return "This lesson we will try to make you understand retrofit, as it is so important for the developers nowadays and " +

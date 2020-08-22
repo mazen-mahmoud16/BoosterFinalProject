@@ -48,6 +48,54 @@ class SupportSystem : AppCompatActivity() {
             fifthLesson()
         }
 
+
+    }
+
+    /**
+     * The five following functions are used as progress bar as the number of lessons increases
+     * progress bar is increased with green color instead of gray
+     */
+    fun firstLesson(){
+        first2.setBackground(getDrawable(R.drawable.textback))
+        second2.setBackground(getDrawable(R.drawable.textbackkk))
+        third2.setBackground(getDrawable(R.drawable.textbackkk))
+        fourth2.setBackground(getDrawable(R.drawable.textbackkk))
+        fifth2.setBackground(getDrawable(R.drawable.textbackkk))
+        shape.setImageDrawable(getDrawable(R.drawable.book_shelf))
+        course.text="To handle and bind the data collection, we use"
+        Answer1.text="Adapter"
+        Answer2.text="LayoutManager"
+        Answer3.text="ItemAnimator"
+        Answer4.text="Main Activity"
+        Answer1.setOnClickListener() {
+            firstAnswer()
+            answer = true
+        }
+        Answer2.setOnClickListener() {
+            secondAnswer()
+            answer = false
+        }
+        Answer3.setOnClickListener() {
+            thirdAnswer()
+            answer = false
+        }
+        Answer4.setOnClickListener() {
+            fourthAnswer()
+            answer = false
+        }
+    }
+    fun secondLesson(){
+        second2.setBackground(getDrawable(R.drawable.textback))
+        first2.setBackground(getDrawable(R.drawable.textback))
+        third2.setBackground(getDrawable(R.drawable.textbackkk))
+        fourth2.setBackground(getDrawable(R.drawable.textbackkk))
+        fifth2.setBackground(getDrawable(R.drawable.textbackkk))
+        shape.setImageDrawable(getDrawable(R.drawable.book_shelf2))
+        course.text="What are recycler view layout kinds?"
+        Answer1.text="Linear"
+        Answer2.text="Grid"
+        Answer3.text="none"
+        Answer4.text="both"
         Answer1.setOnClickListener() {
             firstAnswer()
             answer = false
@@ -65,27 +113,6 @@ class SupportSystem : AppCompatActivity() {
             answer = true
         }
     }
-
-    /**
-     * The five following functions are used as progress bar as the number of lessons increases
-     * progress bar is increased with green color instead of gray
-     */
-    fun firstLesson(){
-        first2.setBackground(getDrawable(R.drawable.textback))
-        second2.setBackground(getDrawable(R.drawable.textbackkk))
-        third2.setBackground(getDrawable(R.drawable.textbackkk))
-        fourth2.setBackground(getDrawable(R.drawable.textbackkk))
-        fifth2.setBackground(getDrawable(R.drawable.textbackkk))
-        shape.setImageDrawable(getDrawable(R.drawable.book_shelf))
-    }
-    fun secondLesson(){
-        second2.setBackground(getDrawable(R.drawable.textback))
-        first2.setBackground(getDrawable(R.drawable.textback))
-        third2.setBackground(getDrawable(R.drawable.textbackkk))
-        fourth2.setBackground(getDrawable(R.drawable.textbackkk))
-        fifth2.setBackground(getDrawable(R.drawable.textbackkk))
-        shape.setImageDrawable(getDrawable(R.drawable.book_shelf2))
-    }
     fun thirdLesson(){
         third2.setBackground(getDrawable(R.drawable.textback))
         first2.setBackground(getDrawable(R.drawable.textback))
@@ -93,6 +120,27 @@ class SupportSystem : AppCompatActivity() {
         fourth2.setBackground(getDrawable(R.drawable.textbackkk))
         fifth2.setBackground(getDrawable(R.drawable.textbackkk))
         shape.setImageDrawable(getDrawable(R.drawable.book_shelf3))
+        course.text="Api uses ... requests"
+        Answer1.text="Get"
+        Answer2.text="Post"
+        Answer3.text="delete"
+        Answer4.text="All"
+        Answer1.setOnClickListener() {
+            firstAnswer()
+            answer = false
+        }
+        Answer2.setOnClickListener() {
+            secondAnswer()
+            answer = false
+        }
+        Answer3.setOnClickListener() {
+            thirdAnswer()
+            answer = false
+        }
+        Answer4.setOnClickListener() {
+            fourthAnswer()
+            answer = true
+        }
     }
     fun fourthLesson(){
         fourth2.setBackground(getDrawable(R.drawable.textback))
@@ -101,6 +149,27 @@ class SupportSystem : AppCompatActivity() {
         second2.setBackground(getDrawable(R.drawable.textback))
         fifth2.setBackground(getDrawable(R.drawable.textbackkk))
         shape.setImageDrawable(getDrawable(R.drawable.shape))
+        course.text="How to reach servers?"
+        Answer1.text="Retrofit"
+        Answer2.text="API interface"
+        Answer3.text="ModelView"
+        Answer4.text="Adapter"
+        Answer1.setOnClickListener() {
+            firstAnswer()
+            answer = false
+        }
+        Answer2.setOnClickListener() {
+            secondAnswer()
+            answer = true
+        }
+        Answer3.setOnClickListener() {
+            thirdAnswer()
+            answer = false
+        }
+        Answer4.setOnClickListener() {
+            fourthAnswer()
+            answer = false
+        }
     }
     fun fifthLesson(){
         fifth2.setBackground(getDrawable(R.drawable.textback))
@@ -109,6 +178,27 @@ class SupportSystem : AppCompatActivity() {
         fourth2.setBackground(getDrawable(R.drawable.textback))
         second2.setBackground(getDrawable(R.drawable.textback))
         shape.setImageDrawable(getDrawable(R.drawable.shape2))
+        course.text="Retrofit automatically serialises ..."
+        Answer1.text="Retrofit"
+        Answer2.text="JSON"
+        Answer3.text="GSON"
+        Answer4.text="None"
+        Answer1.setOnClickListener() {
+            firstAnswer()
+            answer = false
+        }
+        Answer2.setOnClickListener() {
+            secondAnswer()
+            answer = true
+        }
+        Answer3.setOnClickListener() {
+            thirdAnswer()
+            answer = false
+        }
+        Answer4.setOnClickListener() {
+            fourthAnswer()
+            answer = false
+        }
     }
     //***************************************************************************************
     /**
