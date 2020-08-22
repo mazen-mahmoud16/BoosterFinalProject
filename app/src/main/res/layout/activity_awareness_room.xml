@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -155,6 +156,16 @@
         app:srcCompat="@drawable/info" />
 
     <ImageView
+        android:id="@+id/checkMark2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/checked"
+        app:layout_constraintStart_toEndOf="@id/infoo"
+        app:layout_constraintTop_toTopOf="@id/infoo"
+        app:layout_constraintBottom_toBottomOf="@id/infoo"
+        android:visibility="gone"/>
+
+    <ImageView
         android:id="@+id/infoo1"
         android:layout_width="100dp"
         android:layout_height="88dp"
@@ -164,6 +175,16 @@
         app:layout_constraintStart_toStartOf="@id/weak"
         app:layout_constraintTop_toBottomOf="@id/support"
         app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/checkMark3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/checked"
+        app:layout_constraintStart_toEndOf="@id/infoo1"
+        app:layout_constraintTop_toTopOf="@id/infoo1"
+        app:layout_constraintBottom_toBottomOf="@id/infoo1"
+        android:visibility="gone"/>
 
     <ImageView
         android:id="@+id/infoo2"
@@ -176,6 +197,16 @@
         app:layout_constraintStart_toStartOf="@id/goals"
         app:layout_constraintTop_toBottomOf="@id/core"
         app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/checkMark4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/checked"
+        app:layout_constraintStart_toEndOf="@id/infoo2"
+        app:layout_constraintTop_toTopOf="@id/infoo2"
+        app:layout_constraintBottom_toBottomOf="@id/infoo2"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/whitetext"

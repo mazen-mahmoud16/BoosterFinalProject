@@ -56,6 +56,7 @@ class AwarenessRoom : AppCompatActivity() {
              weak.isEnabled = true
              book.setImageDrawable(getDrawable(R.drawable.shape2))
              checkMark.visibility = View.VISIBLE
+             checkMark2.visibility = View.VISIBLE
          }
         if (intent.getStringExtra("checked") == "Strength-Weakness") {
             goals.isEnabled = true
@@ -63,6 +64,9 @@ class AwarenessRoom : AppCompatActivity() {
             weak.isEnabled = true
             book.setImageDrawable(getDrawable(R.drawable.shape2))
             checkMark.visibility = View.VISIBLE
+            checkMark2.visibility = View.VISIBLE
+            checkMark3.visibility = View.VISIBLE
+
         }
         if (intent.getStringExtra("checked") == "Goals and Aspiration") {
             goals.isEnabled = true
@@ -70,6 +74,9 @@ class AwarenessRoom : AppCompatActivity() {
             weak.isEnabled = true
             book.setImageDrawable(getDrawable(R.drawable.shape2))
             checkMark.visibility = View.VISIBLE
+            checkMark2.visibility = View.VISIBLE
+            checkMark3.visibility = View.VISIBLE
+            checkMark4.visibility = View.VISIBLE
         }
 
         core.setOnClickListener() {
